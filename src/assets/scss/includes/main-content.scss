@@ -1,0 +1,15 @@
+.page__slider-wrapper {
+    display: flex;
+}
+
+.page__slider-aside {
+    flex: 0 1 50%;
+    // height: 200px;
+    border: 1px solid red;
+}
+
+.page__slider {
+    flex: 0 1 50%;
+    // height: 200px;
+    border: 1px solid red;
+}
