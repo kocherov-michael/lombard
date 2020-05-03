@@ -5,12 +5,12 @@
     text-transform: uppercase;
     text-align: center;
     color: $default-color;
-    background-color: $secondary-color;
+    background-color: $primary-color;
     font-size: 24px;
 }
 
 .table-gold__grid {
-    background-color: $primary-color;
+    background-color: $primary-background-color;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -25,7 +25,7 @@
 
     &--head {
         font-weight: bold;
-        background-color: $secondary-color;
+        background-color: $primary-color;
         color: $default-color;
         .table-gold__value {
             border-color: $default-color;
