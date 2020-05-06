@@ -1,0 +1,16 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.blocks-row {
+    display: flex;
+    min-height: 250px;
+    border: 1px solid red;
+    flex-direction: column;
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+.blocks-row__item {
+    border: 1px solid green;
+    flex-grow: 1;
+    min-height: 200px;
+}
