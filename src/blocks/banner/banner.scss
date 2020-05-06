@@ -1,0 +1,93 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.banner {
+    // border: 1px solid red;
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner__container {
+    margin: 0 auto;
+    max-width: 580px;
+    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+}
+.banner__head {
+    position: relative;
+    width: 540px;
+    background-color: #fff;
+    margin: 0 auto;
+    border: 2px solid #fec601;
+    padding: 30px;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 70px;
+    // border-bottom: none;
+    // font-size: 27px;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 270px solid transparent;
+        border-right: 270px solid transparent;
+        top: 101%;
+        width: 0;
+        left: -2px;
+        border-top: 45px solid #fec601;
+        z-index: 9;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: 268px solid transparent;
+        border-right: 268px solid transparent;
+        top: 99%;
+        width: 0;
+        left: 0;
+        border-top: 45px solid #fff;
+        z-index: 9;
+    }
+}
+// .banner__inner-head {
+//     padding: 30px;
+//     background-color: #fff;
+//     font-size: 1.5em;
+//     line-height: 1.5;
+// }
+
+.banner__subtitle {
+    color: $secondary-color;
+}
+.banner__icon {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 50%;
+    // border: 1px solid red;
+    transform: translate(-50%,60%);
+    z-index: 20;
+    font-size: 2em;
+}
+
+.banner__button {
+
+}
+
+.banner__link {
+    text-decoration: none;
+    display: inline-block;
+    background-color: $primary-color;
+    padding: 20px;
+    font-size: 1.5em;
+    color: $default-color;
+    border: 2px solid $default-color;
+    transition: all .4s ease;
+    &:hover {
+        background-color: $primary-background-color;
+        color: $dark-color;
+    }
+}
