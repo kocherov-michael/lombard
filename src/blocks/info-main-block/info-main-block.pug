@@ -1,0 +1,9 @@
+mixin info-main-block(options)
+    .info-main-block
+        .info-main-block__text
+            .info-main-block__text-wrapper
+                .info-main-block__title #{options.title}
+                each paragrath in options.text
+                    p.info-main-block__desc #{paragrath}
+        .info-main-block__img-wrapper
+            img.info-main-block__img(src=options.url)

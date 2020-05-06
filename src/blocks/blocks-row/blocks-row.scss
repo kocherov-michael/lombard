@@ -3,14 +3,14 @@
 .blocks-row {
     display: flex;
     min-height: 350px;
-    border: 1px solid red;
+    // border: 1px solid red;
     flex-direction: column;
     @media (min-width: 768px) {
         flex-direction: row;
     }
 }
 .blocks-row__item {
-    border: 1px solid green;
+    // border: 1px solid green;
     flex-grow: 1;
     min-height: 200px;
 }

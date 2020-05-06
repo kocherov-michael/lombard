@@ -12,9 +12,9 @@ body, html {
     margin: 0 auto;
     padding: 0 15px;
 }
-// .page__desc {
-
-// }
+.page__desc {
+    line-height: 1.5;
+}
 .fw-bold {
     font-weight: bold;
 }
@@ -31,4 +31,9 @@ body, html {
 }
 .page__banner {
     min-height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.w-50 {
+    max-width: 50%;
 }
