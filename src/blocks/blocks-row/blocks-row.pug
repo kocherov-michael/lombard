@@ -1,5 +1,31 @@
-.blocks-row
-    .blocks-row__item
-    .blocks-row__item
-    .blocks-row__item
-    .blocks-row__item
+mixin blocks-row(array)
+    .blocks-row
+        each card in array
+            .blocks-row__item
+                +card-link({
+                    link: '#', 
+                    title: card.title,
+                    desc: "",
+                    background: card.background
+                    })
+        //- .blocks-row__item
+        //-     +card-link({
+        //-         link: '#', 
+        //-         title: "Автоломбард",
+        //-         desc: "",
+        //-         background: "src/assets/img/img/card-link-2.jpg"
+        //-         })
+        //- .blocks-row__item
+        //-     +card-link({
+        //-         link: '#', 
+        //-         title: "",
+        //-         desc: "",
+        //-         background: "src/assets/img/img/card-link-2.jpg"
+        //-         })
+        //- .blocks-row__item
+        //-     +card-link({
+        //-         link: '#', 
+        //-         title: "",
+        //-         desc: "",
+        //-         background: "src/assets/img/img/card-link-2.jpg"
+        //-         })
