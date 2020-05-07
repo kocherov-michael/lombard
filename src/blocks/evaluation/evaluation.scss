@@ -1,1 +1,35 @@
 @import "../../assets/scss/utils/vars.scss";
+
+
+.evaluation {
+    background-color: $primary-background-color;
+
+}
+
+.evaluation__wrapper {
+    display: flex;
+}
+
+.evaluation__container {
+    border: 1px solid green;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.eval-form__item {
+    padding: 15px;
+}
+
+.eval-form__top {
+    display: flex;
+}
+
+.eval-form__input-wrapper {
+    flex-grow: 1;
+}
+
+.eval-form__textarea {
+    flex-grow: 1;
+    // margin-left: 15px;
+    // margin-right: 15px;
+}

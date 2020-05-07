@@ -1,0 +1,26 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.input {
+    padding: 10px;
+    background-color: $default-color;
+    // border: none;
+    border: 1px solid $secondary-color;
+    transition: all .4s ease;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+        // box-shadow: $box-shadow;
+    }
+    &--danger {
+        // background-color: $danger-color-light;
+    }
+    &--readonly {
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    &--focused {
+        // box-shadow: $box-shadow;
+    }
+}
