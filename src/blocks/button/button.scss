@@ -1,0 +1,73 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .4s ease;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    
+    &:hover {
+        text-decoration: none;
+    }
+    &:active, &:focus {
+        outline: none;
+        
+    }
+
+    &--primary {
+        
+        color: $default-color;
+        text-transform: uppercase;
+        background-color: $primary-color;
+        &:hover {
+            background-color: $primary-color;
+            color: $default-color;
+        }
+    }
+    &--secondary {
+        // font-family: $secondaryFont;
+        color: $neutral-secondary-color;
+        background-color: $primary-color;
+        font-size: 12px;
+        &:hover {
+            color: $default-color;
+            background-color: $primary-color;
+        }
+    }
+    &--tertiary {
+        // font-family: $secondaryFont;
+        color: $default-color;
+        background-color: $neutral-secondary-color;
+        font-size: 12px;
+        &:hover {
+            background-color: $dark-color;
+            color: $default-color;
+        }
+    }
+
+    &--display-none {
+        display: none;
+    }
+
+}
+
+.button__icon {
+    color: $default-color;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.button__text {
+    // font-family: $secondaryFont;
+    // text-transform: uppercase;
+    // color: $default-color;
+    // font-size: 14px;
+}

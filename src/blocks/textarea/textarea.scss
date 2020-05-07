@@ -3,11 +3,13 @@
 .textarea {
     padding: 10px;
     // background-color: $card-background-color;
-    border: none;
+    // border: none;
     transition: box-shadow .4s ease;
     width: 100%;
-    min-height: 90px;
-    transition: all .4s ease;
+    min-height: 103px;
+    // transition: all .4s ease;
+    border: 1px solid $secondary-color;
+    resize: vertical;
 
     &:focus {
         outline: none;

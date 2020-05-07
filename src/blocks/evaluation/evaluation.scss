@@ -33,3 +33,13 @@
     // margin-left: 15px;
     // margin-right: 15px;
 }
+
+.eval-form__bottom {
+    display: flex;
+    flex-direction: column;
+
+}
+.eval-form__button {
+    // border: 1px solid red;
+    align-self: center;
+}

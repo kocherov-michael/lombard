@@ -1,0 +1,18 @@
+mixin button(options)
+    //- color: primary, secondary, tertiary
+    //- text
+    //- href
+    //- icon: cart
+    if options.submit
+        button.button(type="submit" class="button--"+options.color)&attributes(attributes)
+            .button__text #{options.text}
+
+    else if options.href
+        a.button(href=options.href || "#" class="button--"+options.color)&attributes(attributes)
+            if options.icon=="cart"
+                i.button__icon.zmdi.zmdi-shopping-cart
+            .button__text #{options.text}
+    
+    else
+        button.button(class="button--"+options.color)&attributes(attributes)
+            .button__text #{options.text}
