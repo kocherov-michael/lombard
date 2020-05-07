@@ -1,10 +1,10 @@
 @import "../../assets/scss/utils/vars.scss";
 
 .input {
-    padding: 10px;
+    padding: 20px;
     background-color: $default-color;
-    // border: none;
-    border: 1px solid $secondary-color;
+    border: none;
+    // border: 1px solid $secondary-color;
     transition: all .4s ease;
     width: 100%;
 

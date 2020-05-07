@@ -1,14 +1,15 @@
 @import "../../assets/scss/utils/vars.scss";
 
 .textarea {
-    padding: 10px;
+    padding: 20px;
     // background-color: $card-background-color;
     // border: none;
     transition: box-shadow .4s ease;
     width: 100%;
     min-height: 103px;
     // transition: all .4s ease;
-    border: 1px solid $secondary-color;
+    // border: 1px solid $secondary-color;
+    border: none;
     resize: vertical;
 
     &:focus {
