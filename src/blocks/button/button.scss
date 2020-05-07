@@ -14,10 +14,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
     border: none;
+    border: 1px solid #fc7654;
 
     background: #fc7654;
     color: white;
-    box-shadow: 0 0 3px 0 #fc7654;
     display: block;
     // margin: 13px 13px 0 4px;
     text-align: center;
@@ -26,6 +26,7 @@
     // padding: 15px 0 15px 0;
     
     &:hover {
+        box-shadow: 0 0 3px 0 #fc7654;
         text-decoration: none;
         background: #fff;
         color: #fc7654;
