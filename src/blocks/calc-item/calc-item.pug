@@ -1,0 +1,11 @@
+mixin calc-item(options)
+    .calc-item
+        .calc-item__title #{options.title}
+        if options.innerText
+            .calc-item__input-wrapper 
+                .calc-item__input 
+                    +input({value: "50"})
+                .calc-item__inner-text #{options.innerText}
+        else if options.select
+            .calc-item__input 
+                    +input({value: "50"})

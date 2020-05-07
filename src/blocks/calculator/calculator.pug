@@ -1,0 +1,50 @@
+.calculator.br
+    .calculator__title Калькулятор займа
+    .calculator__main
+        .calculator__top
+            .calculator__inputs.br
+                .calculator__input-item
+                    +calc-item({ 
+                        title: "Вес изделия:",
+                        innerText: "гр."
+                        }) 
+                .calculator__input-item
+                    +calc-item({ 
+                        title: "Проба:",
+                        select: ["585", "750", "999"]
+                    }) 
+                .calculator__input-item
+                    +calc-item({ 
+                        title: "Срок займа:",
+                        select: [
+                            "10 дней",
+                            "20 дней",
+                            "30 дней",
+                            "40 дней",
+                            "50 дней",
+                            "60 дней",
+                            "70 дней",
+                            "80 дней",
+                            "90 дней",
+                        ] 
+                        }) 
+            .calculator__inputs.br
+                .calculator__input-item
+                    +calc-item({ 
+                        title: "Сумма к получению:",
+                        innerText: "руб."
+                        }) 
+                .calculator__input-item
+                    +calc-item({
+                        title: "Ежедневный платёж:",
+                        innerText: "руб."
+                        }) 
+                .calculator__input-item
+                    +calc-item({ 
+                        title: "Платёж за весь срок займа:",
+                        innerText: "руб."
+                        }) 
+        .calculator__bottom
+            .calculator__button
+                +button({text: "Оставить заявку"})
+
