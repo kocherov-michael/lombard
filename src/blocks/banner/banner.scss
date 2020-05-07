@@ -18,9 +18,9 @@
 .banner__head {
     position: relative;
     width: 540px;
-    background-color: #fff;
+    background-color: $default-color;
     margin: 0 auto;
-    border: 2px solid #fec601;
+    border: 2px solid $primary-color;
     padding: 30px;
     font-size: 1.5em;
     line-height: 1.5;
@@ -36,7 +36,7 @@
         top: 101%;
         width: 0;
         left: -2px;
-        border-top: 45px solid #fec601;
+        border-top: 45px solid $primary-color;
         z-index: 9;
     }
     &:after {
@@ -48,7 +48,7 @@
         top: 99%;
         width: 0;
         left: 0;
-        border-top: 45px solid #fff;
+        border-top: 45px solid $default-color;
         z-index: 9;
     }
 }

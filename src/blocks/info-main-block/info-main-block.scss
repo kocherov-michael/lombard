@@ -7,6 +7,8 @@
 
 .info-main-block__text {
     flex: 0 1 50%;
+    // border: 1px solid green;
+    margin: 0 30px;
 }
 
 .info-main-block__text-wrapper {
@@ -27,9 +29,10 @@
     flex: 0 1 50%;
     // padding: 0 30px;
     margin: 0 30px;
-    padding: 0 0 58% 0;
+    padding: 0 0 31% 0;
     overflow: hidden;
     position: relative;
+    // border: 1px solid red;
 }
 
 .info-main-block__img {

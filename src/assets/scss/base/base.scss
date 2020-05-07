@@ -37,3 +37,12 @@ body, html {
 .w-50 {
     max-width: 50%;
 }
+.info-cards__item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.info-cards__item:nth-child(even) {
+    .info-main-block__text {
+        order: 1;
+    }
+}
