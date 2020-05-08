@@ -10,18 +10,19 @@
 }
 
 .table-gold__grid {
-    background-color: $primary-background-color;
+    background-color: $primary-color;
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
 .table-gold__row {
     display: flex;
-    border: 1px solid $secondary-color;
+    // border: 1px solid $secondary-color;
     margin: 0 15px 10px;
     text-transform: uppercase;
     text-align: center;
     background-color: $default-color;
+    border-radius: 10px;
 
     &--head {
         font-weight: bold;
@@ -45,5 +46,5 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-left: 1px solid $secondary-color;
+    // border-left: 1px solid $secondary-color;
 }
