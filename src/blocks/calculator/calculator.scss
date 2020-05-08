@@ -1,18 +1,41 @@
 @import "../../assets/scss/utils/vars.scss";
 
 .calculator {
-    background-color: $primary-background-color;
+    background-color: $background-dark-color;
+    color: $default-color;
+}
+
+.calculator__title {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: $default-color;
 }
 
 .calculator__top {
     display: flex;
 }
 .calculator__inputs {
-    flex-grow: 1;
-    padding: 20px;
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .calculator__input-item {
     padding-top: 15px;
     padding-bottom: 15px;
+    flex: 1;
+}
+
+.calculator__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.calculator__button {
+    max-width: 200px;
 }

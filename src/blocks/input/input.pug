@@ -4,3 +4,16 @@ mixin input(options)
     //- if options.custom=="calculator"
     //-     .input-custom
     //-         .input-custom
+mixin labelInput(options)
+    label.label&attributes(attributes) #{options.title}
+        if options.select
+            select.input(type='text' placeholder=options.placeholder)
+                each option in options.select
+                    option.option #{option}
+        else
+            input.input(type='text' placeholder=options.placeholder)
+        if options.innerText
+            .label__inner-text #{options.innerText}
+        else if options.select
+            .label__inner-text
+                i.zmdi.zmdi-chevron-down

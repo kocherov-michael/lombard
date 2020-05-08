@@ -4,4 +4,10 @@ main.page
             p.page__desc.fw-bold Золото, бриллианты и серебро
             p.page__desc.fw-bold Сеть Ломбардов в Санкт-Петербурге (10 отделений). Займ/кредит под залог ювелирных изделий, драгоценных камней
         .page__row
-            include ../../blocks/calculator/calculator.pug
+            .page__split
+                .page__split-left.flex-basis-40
+                    .calculator-aside(style="background-image: url(./assets/img/bg/gold-bg.jpg)")
+                        .calculator-aside__content 
+                            .calculator-aside__text ЦЕНА НА ЗОЛОТО 585<br> ДО 2 185 РУБЛЕЙ<br> ЗА 1 ГРАММ 
+                .page__split-rigth.flex-basis-60
+                    include ../../blocks/calculator/calculator.pug
