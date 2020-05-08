@@ -2,7 +2,7 @@
 
 .blocks-row {
     display: flex;
-    min-height: 350px;
+    min-height: 300px;
     // border: 1px solid red;
     flex-direction: column;
     @media (min-width: 768px) {
@@ -13,4 +13,5 @@
     // border: 1px solid green;
     flex-grow: 1;
     min-height: 200px;
+    padding: 10px;
 }
