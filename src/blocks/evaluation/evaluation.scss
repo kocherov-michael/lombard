@@ -2,8 +2,23 @@
 
 
 .evaluation {
-    background-color: $primary-background-color;
+    // background-color: $primary-color;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.evaluation__fade {
+    height: 100%;
+    width: 100%;
+    background-color: $background-opacity-color;
+}
 
+.evaluation__title {
+    text-align: center;
+    color: $default-color;
+    font-size: 2em;
+    padding-bottom: 20px;
+    font-weight: bold;
 }
 
 .evaluation__wrapper {
@@ -11,13 +26,13 @@
 }
 
 .evaluation__container {
-    // border: 1px solid green;
     margin: 0 auto;
     padding: 30px;
 }
 
 .eval-form__item {
     padding: 15px;
+    color: $default-color;
 }
 
 .eval-form__top {
@@ -30,8 +45,13 @@
 
 .eval-form__textarea {
     flex-grow: 1;
-    // margin-left: 15px;
-    // margin-right: 15px;
+    .eval-form__item {
+        height: 100%;
+    }
+    textarea {
+        height: 100%;
+        border-radius: 10px;
+    }
 }
 
 .eval-form__bottom {
@@ -40,7 +60,6 @@
 
 }
 .eval-form__button {
-    // border: 1px solid red;
     align-self: center;
     width: 200px;
 }

@@ -19,8 +19,10 @@
 }
 
 .info-main-block__title {
-    font-size: 1.1em;
+    font-size: 1.7em;
     color: $accent-color;
+    font-weight: bold;
+    line-height: 1.1;
 }
 
 .info-main-block__desc {
@@ -39,6 +41,7 @@
 
 .info-main-block__img {
     width: 100%;
+    border-radius: 10px;
     // height: 100%;
     // object-fit: cover;
     // position: absolute;

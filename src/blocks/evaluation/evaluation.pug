@@ -1,23 +1,24 @@
-.evaluation
-    .evaluation__wrapper.container
-        .evaluation__container
-            .evaluation__title Быстрая оценка
-            .evaluation__form
-                form.eval-form(action="")
-                    .eval-form__top
-                        .eval-form__input-wrapper
+.evaluation(style="background-image: url(src/assets/img/bg/bg2.jpg)")
+    .evaluation__fade
+        .evaluation__wrapper.container
+            .evaluation__container
+                .evaluation__title Быстрая оценка
+                .evaluation__form
+                    form.eval-form(action="")
+                        .eval-form__top
+                            .eval-form__input-wrapper
+                                .eval-form__item
+                                    +input({placeholder: "Ваше имя"})
+                                .eval-form__item
+                                    +input({placeholder: "Номер телефона"})
+                            .eval-form__textarea
+                                .eval-form__item
+                                    +textarea("Сообщение", "name")
+                        .eval-form__bottom
                             .eval-form__item
-                                +input({placeholder: "Ваше имя"})
+                                +input({placeholder: "загрузите"})
                             .eval-form__item
-                                +input({placeholder: "Номер телефона"})
-                        .eval-form__textarea
-                            .eval-form__item
-                                +textarea("Сообщение", "name")
-                    .eval-form__bottom
-                        .eval-form__item
-                            +input({placeholder: "загрузите"})
-                        .eval-form__item
-                            +checkbox("Отправляя заявку, я предоставляю согласие на обработку персональных данных.", "", "value")
-                        .eval-form__button
-                            +button({text: "Отправить"})
+                                +checkbox("Отправляя заявку, я предоставляю согласие на обработку персональных данных.", "", "value")
+                            .eval-form__button
+                                +button({text: "Отправить"})
 
