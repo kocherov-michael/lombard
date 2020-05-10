@@ -1,0 +1,10 @@
+mixin dropdownDesc(optionsArr)
+    each obj in optionsArr
+        .dropdown-desc(data-dropdown-desc) 
+            .dropdown-desc__title(data-dropdown-desc-title)
+                .dropdown-desc__title-sign.dropdown-desc__title-sign--close +
+                .dropdown-desc__title-sign.dropdown-desc__title-sign--open -
+                .dropdown-desc__title-text #{obj.title}
+            .dropdown-desc__text(data-dropdown-desc-text)
+                each paragrath in obj.desc 
+                    p #{paragrath}
