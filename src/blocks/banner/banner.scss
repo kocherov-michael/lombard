@@ -2,17 +2,11 @@
 
 .banner {
     // border: 1px solid red;
-    height: 1px;
+    // height: 1px;
     min-height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    // position: relative;
-
-    // &:after {
-    //     content: "";
-
-    // }
 }
 .banner__content {
     width: 100%;
@@ -21,66 +15,24 @@
 }
 .banner__container {
     margin: 0 auto;
-    max-width: 580px;
     text-align: center;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
+    padding-bottom: 40px;
 }
 .banner__head {
     color: $default-color;
     position: relative;
-    width: 540px;
-    // background-color: $default-color;
     margin: 0 auto;
-    // border: 2px solid $primary-color;
     padding: 30px;
     font-size: 1.5em;
     line-height: 1.5;
     margin-bottom: 70px;
-    // border-bottom: none;
-    // font-size: 27px;
-    // &:before {
-    //     content: "";
-    //     position: absolute;
-    //     width: 0;
-    //     border-left: 270px solid transparent;
-    //     border-right: 270px solid transparent;
-    //     top: 101%;
-    //     width: 0;
-    //     left: -2px;
-    //     border-top: 45px solid $primary-color;
-    //     z-index: 9;
-    // }
-    // &:after {
-    //     content: "";
-    //     position: absolute;
-    //     width: 0;
-    //     border-left: 268px solid transparent;
-    //     border-right: 268px solid transparent;
-    //     top: 99%;
-    //     width: 0;
-    //     left: 0;
-    //     border-top: 45px solid $default-color;
-    //     z-index: 9;
-    // }
 }
-// .banner__inner-head {
-//     padding: 30px;
-//     background-color: #fff;
-//     font-size: 1.5em;
-//     line-height: 1.5;
-// }
 
-.banner__subtitle {
-    // color: $secondary-color;
-}
 .banner__icon {
     position: absolute;
     display: inline-block;
     bottom: 0;
     left: 50%;
-    // border: 1px solid red;
     transform: translate(-50%,60%);
     z-index: 20;
     font-size: 2em;
@@ -90,7 +42,6 @@
     display: flex;
     justify-content: center;
 }
-
 .banner__link {
     // text-decoration: none;
     // display: inline-block;

@@ -6,7 +6,7 @@ mixin banner(options)
                     .banner__title #{options.title}
                     .banner__subtitle #{options.subtitle}
                     .banner__icon
-                        i.zmdi.zmdi-pin
+                        i.zmdi(class=options.icon)
                 .banner__button
                     //- a.banner__link(href=options.link) #{options.button}
                     .banner__link

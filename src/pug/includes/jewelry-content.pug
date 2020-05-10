@@ -20,58 +20,23 @@ main.page
             title: "У нас уже 12 ломбардов",
             subtitle: "Выберите ближайший к вам",
             button: "Выбрать ломбард",
-            link: "#"
+            link: "#",
+            icon: "zmdi-pin"
             })
     .page__container.container
         .page__title 3 шага к получению денег
         .page__row
             include ../../blocks/steps/steps.pug
+    .page__wide-block
+        +banner({
+            background: "src/assets/img/bg/bg1.jpg",
+            title: "Мы ценим ваше время",
+            subtitle: "Для вашего удобства оцените драгоценности заранее",
+            button: "Оставить заявку",
+            link: "#",
+            icon: "zmdi-time"
+            })
             
 
 
-            //- .page__split.page__split--left-aside
-                .page__split-left
-                    include ../../blocks/table-gold/table-gold.pug
-                .page__split-rigth
-                    .page__split-row
-                        +blocks-row([
-                            {
-                                link: '#', 
-                                title: "Кольца",
-                                desc: "",
-                                background: "src/assets/img/img/card-link-1.jpg"
-                            },
-                            {
-                                link: '#', 
-                                title: "Серьги",
-                                desc: "",
-                                background: "src/assets/img/img/card-link-2.jpg"
-                            },
-                            {
-                                link: '#', 
-                                title: "Цепи",
-                                desc: "",
-                                background: "src/assets/img/img/card-link-3.jpg"
-                            },
-                        ])
-                    .page__split-row
-                        +blocks-row([
-                            {
-                                link: '#', 
-                                title: "Кольца",
-                                desc: "",
-                                background: "src/assets/img/img/card-link-1.jpg"
-                            },
-                            {
-                                link: '#', 
-                                title: "Серьги",
-                                desc: "",
-                                background: "src/assets/img/img/card-link-2.jpg"
-                            },
-                            {
-                                link: '#', 
-                                title: "Цепи",
-                                desc: "",
-                                background: "src/assets/img/img/card-link-3.jpg"
-                            },
-                        ])
+            
