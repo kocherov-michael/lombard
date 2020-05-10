@@ -1,3 +1,7 @@
+import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/owl.carousel.js';
+import 'owl.carousel';
+
 import './../blocks/header/header.js'
 import './../blocks/logo/logo.js'
 import './../blocks/menu/menu.js'
@@ -15,4 +19,6 @@ import './../blocks/calculator/calculator.js'
 import './../blocks/dropdown-desc/dropdown-desc.js'
 import './../blocks/calc-item/calc-item.js'
 import './../blocks/info-main-block/info-main-block.js'
+import './../blocks/block-accept/block-accept.js'
 import './../blocks/footer/footer.js'
+

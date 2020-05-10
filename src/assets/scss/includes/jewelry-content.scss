@@ -30,3 +30,20 @@
 .flex-basis-40 {
     flex-basis: 40%;
 }
+
+.page-accept {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.page-accept__aside {
+    flex: 0 1 30%;
+    min-width: 200px;
+}
+
+.page-accept__slider {
+    flex: 0 1 70%;
+}

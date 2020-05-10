@@ -4,6 +4,16 @@
     @media (min-width: 768px) {
         flex-direction: row;
     }
+
+    &--left-aside {
+        .page__split-left {
+            flex: 0 1 30%;
+            min-width: 200px;
+        }
+        .page__split-rigth {
+            flex: 0 1 70%;
+        }
+    }
 }
 
 .page__split-left {
