@@ -1,8 +1,8 @@
-import './block-accept.scss'
+import './steps.scss'
 
 $(document).ready(function() {
-    jQuery('#carouselAccept').owlCarousel({
-        items: 6, //Кол-во отображаемых элементов
+    jQuery('#carouselSteps').owlCarousel({
+        items: 3, //Кол-во отображаемых элементов
         loop:false, //Зацикливаем слайдер
         margin:50, //Отступ от элемента справа в 50px
         dots:true,
@@ -18,7 +18,7 @@ $(document).ready(function() {
             //     items:2
             // },
             768:{
-                items:6
+                items:3
             }
         }
     });

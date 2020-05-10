@@ -15,7 +15,7 @@
     background-size: cover;
 
     &:hover {
-        .card-link__decs {
+        .card-link__desc {
             transform:translateY(0);
             opacity: 1;
         } 
@@ -44,7 +44,7 @@
     // background-repeat: no-repeat;
     // background-size: cover;
 }
-.card-link__decs {
+.card-link__desc {
     background-color: $accent-opacity-color;
     // height: 130px;
     display: flex;

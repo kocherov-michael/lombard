@@ -20,5 +20,6 @@ import './../blocks/dropdown-desc/dropdown-desc.js'
 import './../blocks/calc-item/calc-item.js'
 import './../blocks/info-main-block/info-main-block.js'
 import './../blocks/block-accept/block-accept.js'
+import './../blocks/steps/steps.js'
 import './../blocks/footer/footer.js'
 
