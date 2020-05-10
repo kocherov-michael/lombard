@@ -1,9 +1,128 @@
 @import "../../assets/scss/utils/vars.scss";
 
+.block-accept {
+    display: flex;
+    // border: 1px solid yellow;
+    flex-direction: column;
+
+    @media(min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.block-accept__aside {
+    // background-color: red;
+    flex: 0 1 30%;
+    min-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media(min-width: 768px) {
+        order: -1;
+    }
+}
+
+.aside-list {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: yellow;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .aside-list__item {
-    display: block;
+    flex-grow: 1;
+    // display: block;
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
     text-decoration: none;
     background-color: $primary-color;
     color: $default-color;
     padding: 20px;
+}
+
+.block-accept__slider {
+    flex: 1 1 70%;
+
+   
+    // border: 1px solid blue;
+}
+
+.block-accept-carousel {
+    // border: 1px solid green;
+    .owl-carousel {
+        // position: relative;
+        .owl-item {
+            height: 300px;
+            // margin-right: 50px;
+        }
+
+        .owl-prev,.owl-next {
+            position: absolute;
+            top: 50%;
+            outline: none;
+            span {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                display: inline-block;
+                padding: 15px;
+                background-color: $primary-color;
+                font-size: 2em;
+                color: #fff;
+                line-height: .5;
+                transform: translateY(-50%);
+                
+            }
+        }
+        .owl-prev {
+            left: 15px;
+        }
+
+        .owl-next {
+            right: 15px;
+        }
+        .owl-dots {
+            display: flex;
+            justify-content: center;
+            // padding: 20px;
+        }
+
+        .owl-dot {
+            height: 10px;
+            width: 10px;
+            background-color: $primary-color;
+            border-radius: 50%;
+            margin: 20px 15px;
+            outline: none;
+
+            &.active {
+                background-color: $accent-color;
+            }
+        }
+        
+        @media(min-width: 768px) {
+            .owl-stage {
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            .owl-item {
+                // border: 1px solid red;
+                float: none;
+                flex: 0 1 33.33%;
+                padding-left: 20px;
+                // padding-right: 10px;
+                min-height: 250px;
+                margin-right: 0 !important;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .owl-dots {
+                display: none;
+            }
+        }
+    }
 }

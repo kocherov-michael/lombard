@@ -1,4 +1,31 @@
 .block-accept
+    .block-accept__slider
+        .block-accept-carousel
+            .owl-carousel.owl-theme#carouselOne
+                +card-link({
+                    title: "Кольца",
+                    background: "src/assets/img/img/card-link-1.jpg"
+                    })
+                +card-link({
+                    title: "Цепи",
+                    background: "src/assets/img/img/card-link-2.jpg"
+                    })
+                +card-link({
+                    title: "Серьги",
+                    background: "src/assets/img/img/card-link-3.jpg"
+                    })
+                +card-link({
+                    title: "Бриллианты",
+                    background: "src/assets/img/img/card-link-4.jpg"
+                    })
+                +card-link({
+                    title: "Браслеты",
+                    background: "src/assets/img/img/card-link-5.jpg"
+                    })
+                +card-link({
+                    title: "Подвески",
+                    background: "src/assets/img/img/card-link-6.jpg"
+                    })
     .block-accept__aside
         .aside-list
             a.aside-list__item(href="#") Условия залога золота 
@@ -7,4 +34,3 @@
             a.aside-list__item(href="#") Цена на бриллианты 
             a.aside-list__item(href="#") Цена на серебро
             a.aside-list__item(href="#") Цена на платину и палладий
-    .block-accept__slider
