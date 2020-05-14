@@ -22,5 +22,6 @@ import './../blocks/info-main-block/info-main-block.js'
 import './../blocks/block-accept/block-accept.js'
 import './../blocks/steps/steps.js'
 import './../blocks/conditions/conditions.js'
+import './../blocks/conditions-card/conditions-card.js'
 import './../blocks/footer/footer.js'
 

@@ -1,7 +1,7 @@
 @import "../../assets/scss/utils/vars.scss";
 
 .conditions__carousel {
-    border: 1px solid green;
+    // border: 1px solid green;
     .card-link {
         .card-link__desc {
             opacity: 1;
@@ -13,7 +13,16 @@
     .owl-carousel {
         
         .owl-item {
-            height: 300px;
+            // height: 300px;
+        }
+        .owl-stage {
+            display: flex;
+        }
+        .conditions-card__desc {
+            padding: 15px 70px;
+        }
+        .owl-item:last-child {
+            margin-right: 0 !important;
         }
 
         @media(min-width: 768px) {
@@ -23,6 +32,7 @@
             .owl-stage {
                 display: flex;
                 flex-wrap: wrap;
+                // margin: 0 -10px;
             }
     
             .owl-item {
@@ -39,6 +49,9 @@
 
             .owl-dots {
                 display: none;
+            }
+            .conditions-card__desc {
+                padding: 15px;
             }
         }
     }
