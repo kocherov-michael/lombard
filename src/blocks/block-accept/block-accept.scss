@@ -52,56 +52,11 @@
 .block-accept-carousel {
     // border: 1px solid green;
     .owl-carousel {
-        // position: relative;
+        
         .owl-item {
             height: 300px;
-            // margin-right: 50px;
         }
 
-        // .owl-prev,.owl-next {
-        //     position: absolute;
-        //     top: 50%;
-        //     outline: none;
-        //     span {
-        //         height: 50px;
-        //         width: 50px;
-        //         border-radius: 50%;
-        //         display: inline-block;
-        //         padding: 15px;
-        //         background-color: $primary-color;
-        //         font-size: 2em;
-        //         color: #fff;
-        //         line-height: .5;
-        //         transform: translateY(-50%);
-                
-        //     }
-        // }
-        // .owl-prev {
-        //     left: 15px;
-        // }
-
-        // .owl-next {
-        //     right: 15px;
-        // }
-        // .owl-dots {
-        //     display: flex;
-        //     justify-content: center;
-        //     // padding: 20px;
-        // }
-
-        // .owl-dot {
-        //     height: 10px;
-        //     width: 10px;
-        //     background-color: $primary-color;
-        //     border-radius: 50%;
-        //     margin: 20px 15px;
-        //     outline: none;
-
-        //     &.active {
-        //         background-color: $accent-color;
-        //     }
-        // }
-        
         @media(min-width: 768px) {
             .owl-stage {
                 display: flex;

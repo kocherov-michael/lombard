@@ -1,6 +1,19 @@
 mixin card-link(options)
-    a.card-link(href=options.link style="background-image: url("+options.background+")")
-        .card-link__title #{options.title}
-        .card-link__main 
-            if options.desc
-                .card-link__desc #{options.desc}
+    if options.link
+        a.card-link(href=options.link style="background-image: url("+options.background+")")
+            .card-link__title #{options.title}
+            .card-link__main 
+                if options.desc
+                    .card-link__desc #{options.desc}
+    else if options.background
+        .card-link(style="background-image: url("+options.background+")")
+            .card-link__title #{options.title}
+            .card-link__main 
+                if options.desc
+                    .card-link__desc #{options.desc}
+    else 
+        .card-link
+            .card-link__title #{options.title}
+            .card-link__main 
+                if options.desc
+                    .card-link__desc #{options.desc}
