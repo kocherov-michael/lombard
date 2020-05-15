@@ -26,7 +26,26 @@ main.page
     .page__container.container
         .page__title 3 шага к получению денег
         .page__row
-            include ../../blocks/steps/steps.pug
+            .carousel-line-wrapper
+                .owl-carousel.owl-theme#carouselSteps
+                    +card-link({
+                        title: "Посетить ближайший ломбард",
+                        desc: "1",
+                        background: "src/assets/img/img/card-link-1.jpg",
+                        class: "step"
+                        })
+                    +card-link({
+                        title: "Оценить драгоценности",
+                        background: "src/assets/img/img/card-link-2.jpg",
+                        desc: "2",
+                        class: "step"
+                        })
+                    +card-link({
+                        title: "Получить деньги",
+                        background: "src/assets/img/img/card-link-3.jpg",
+                        desc: "3",
+                        class: "step"
+                        })
     .page__wide-block
         +banner({
             background: "src/assets/img/bg/bg1.jpg",
@@ -40,6 +59,31 @@ main.page
         .page__title Что вы должны знать при получении займа
         .page__row
             include ../../blocks/conditions/conditions.pug
+        .page__title Примеры выданных займов
+        .page__row
+            .carousel-line-wrapper
+                .owl-carousel.owl-theme#carouselExamples
+                    +card-link({
+                        title: "Вес — 31,31г.",
+                        subtitle: "Сумма оценки — 11 300 руб.",
+                        desc: "1",
+                        background: "src/assets/img/img/card-link-1.jpg",
+                        class: "example"
+                        })
+                    +card-link({
+                        title: "Вес — 5.58г.",
+                        subtitle: "Сумма оценки — 141 300 руб.",
+                        background: "src/assets/img/img/card-link-2.jpg",
+                        desc: "2",
+                        class: "example"
+                        })
+                    +card-link({
+                        title: "Вес — 11,53г.",
+                        subtitle: "Сумма оценки — 41 300 руб.",
+                        background: "src/assets/img/img/card-link-3.jpg",
+                        desc: "3",
+                        class: "example"
+                        })
 
 
             

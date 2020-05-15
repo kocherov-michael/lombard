@@ -20,8 +20,55 @@ import './../blocks/dropdown-desc/dropdown-desc.js'
 import './../blocks/calc-item/calc-item.js'
 import './../blocks/info-main-block/info-main-block.js'
 import './../blocks/block-accept/block-accept.js'
-import './../blocks/steps/steps.js'
+// import './../blocks/steps/steps.js'
 import './../blocks/conditions/conditions.js'
 import './../blocks/conditions-card/conditions-card.js'
 import './../blocks/footer/footer.js'
 
+$(document).ready(function() {
+    jQuery('#carouselSteps').owlCarousel({
+        items: 3, //Кол-во отображаемых элементов
+        loop:false, //Зацикливаем слайдер
+        margin:50, //Отступ от элемента справа в 50px
+        dots:true,
+        nav:true, //Отключение навигации
+        autoplay:false, //Автозапуск слайдера
+        smartSpeed:1000, //Время движения слайда
+        autoplayTimeout:2000, //Время смены слайда
+        responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+            0:{
+                items:1
+            },
+            // 600:{
+            //     items:2
+            // },
+            768:{
+                items:3
+            }
+        }
+    });
+});
+
+$(document).ready(function() {
+    jQuery('#carouselExamples').owlCarousel({
+        items: 3, //Кол-во отображаемых элементов
+        loop:false, //Зацикливаем слайдер
+        margin:50, //Отступ от элемента справа в 50px
+        dots:true,
+        nav:true, //Отключение навигации
+        autoplay:false, //Автозапуск слайдера
+        smartSpeed:1000, //Время движения слайда
+        autoplayTimeout:2000, //Время смены слайда
+        responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+            0:{
+                items:1
+            },
+            // 600:{
+            //     items:2
+            // },
+            768:{
+                items:3
+            }
+        }
+    });
+});

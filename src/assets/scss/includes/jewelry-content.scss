@@ -47,3 +47,16 @@
 .page-accept__slider {
     flex: 0 1 70%;
 }
+
+.carousel-line-wrapper {
+    
+
+    .owl-carousel {
+        .owl-prev,.owl-next {
+            span {
+                transform: translateY(-110%);
+                
+            }
+        }
+    }
+}
