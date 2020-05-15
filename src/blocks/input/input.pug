@@ -17,3 +17,10 @@ mixin labelInput(options)
         else if options.select
             .label__inner-text
                 i.zmdi.zmdi-chevron-down
+
+mixin loadInput(options)
+    .load-input&attributes(attributes)
+        input.load-input__input( type="file" id="customFile" name="file")
+        label.load-input__label( for="customFile")
+            .load-input__text Загрузить изображение
+            .load-input__button Прикрепить

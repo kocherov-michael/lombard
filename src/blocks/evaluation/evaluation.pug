@@ -16,7 +16,10 @@
                                     +textarea("Сообщение", "name")
                         .eval-form__bottom
                             .eval-form__item
-                                +input({placeholder: "загрузите"})
+                                +loadInput({
+                                    placeholder: "загрузите",
+                                    button: "Прикрепить"
+                                    })
                             .eval-form__item
                                 +checkbox("Отправляя заявку, я предоставляю согласие на обработку персональных данных.", "", "value")
                             .eval-form__button
