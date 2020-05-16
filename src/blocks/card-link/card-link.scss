@@ -122,3 +122,19 @@
     //     border-radius: 10px;
     // }
 }
+.advantage {
+    &.card-link {
+        min-height: 250px;
+        // justify-content: flex-end;
+    }
+
+    .card-link__title {
+        // order: 1;
+        text-transform: none;
+        font-weight: normal;
+        flex-direction: column;
+    }
+    .card-link__main {
+        display: none;
+    }
+}
