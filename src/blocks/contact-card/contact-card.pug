@@ -1,0 +1,14 @@
+mixin contactCard(options)
+    .contact-card
+        .contact-card__title
+            a.contact-card__link(link="lombard-address.html") #{options.title}
+        .contact-card__main
+            .contact-card__coordinates
+                //- .contact-card__metro Владимирская
+                .contact-card__address #{options.address}
+            .contact-card__mode
+                .contact-card__time #{options.time}
+            .contact-card__coontacts
+                .contact-card__phone #{options.phone}
+                //- .contact-card__mail mail@info.ru
+

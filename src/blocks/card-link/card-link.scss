@@ -75,18 +75,25 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-
+        transform: translate(-50%, -20%);
+        display: block;
     }
 
     .card-link__desc {
         transform: none;
         opacity: 1 ;
-        width: 100px;
-        min-height: 100px;
-        font-size: 2.5em;
+        width: 50px;
+        // min-height: 70px;
+        height: 50px;
+        font-size: 1.5em;
         font-weight: bold;
         border-radius: 10px;
+        line-height: 1;
+        // border: 1px solid red;
+
+        // padding-top: 0;
+        // padding-bottom: 0;
+        // padding: 0;
     }
 }
 .example {
