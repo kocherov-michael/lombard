@@ -1,11 +1,20 @@
 mixin conditionsCard(options)
     .conditions-card
         .conditions-card__title #{options.title}
-        if !options.link
-            .conditions-card__main 
-                .conditions-card__desc #{options.desc}
-        else if options.link
+        if options.link
             .conditions-card__center #{options.desc}
             .conditions-card__button-wrapper
                 .conditions-card__button
                     +button({text: "Оставить заявку"})
+        else if options.list
+            .conditions-card__main.conditions-card__main--list-wrapper
+                .conditions-card__desc #{options.desc}
+                .conditions-card__list
+                    each elem in options.list
+                        .conditions-card__list-item 
+                            .conditions-card__list-item-icon
+                                i.zmdi(class="zmdi-"+elem.icon)
+                            .conditions-card__list-item-text #{elem.text}
+        else
+            .conditions-card__main 
+                .conditions-card__desc #{options.desc}

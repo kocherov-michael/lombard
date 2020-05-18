@@ -59,3 +59,48 @@ main.page
                 },
                 
             ])
+        .page__title 3 способа бесплатной оценки ваших часов
+        .page__row
+            .carousel-line-wrapper
+                .owl-carousel.owl-theme(data-owl-carousel="3")
+                    +conditionsCard({
+                        title: "1. Специалист",
+                        desc: "Связаться с нашим специалистом удобным для вас способом.",
+                        list: [
+                            {
+                                icon: "account-box-o",
+                                text: "Игорь",
+                            },
+                            {
+                                icon: "phone",
+                                text: "1234567",
+                            },
+                            {
+                                icon: "email",
+                                text: "mail@mail.ru",
+                            },
+                            {
+                                icon: "whatsapp",
+                                text: "1234567",
+                            },
+                            {
+                                icon: "time-interval",
+                                text: "с 08:00 - до 22:00",
+                            },
+                        ]
+                        })
+                    +conditionsCard({
+                        title: "2. Быстрая оценка",
+                        desc: 'Воспользоваться формой "Быстрой оценки" на нашем сайте.',
+                        link: "#"
+                        })
+                    +conditionsCard({
+                        title: "3. Посетить Салон-Ломбард",
+                        desc: "Посетить Салон-Ломбард Часов. Специалист ломбарда произведет оценку и выдаст Вам займ за 10 минут.",
+                        list: [
+                            {
+                                icon: "pin",
+                                text: "Владимирский пр. 15"
+                            }
+                        ]
+                        })

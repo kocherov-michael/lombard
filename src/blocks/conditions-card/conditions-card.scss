@@ -38,6 +38,13 @@
     // background-position: center;
     // background-repeat: no-repeat;
     // background-size: cover;
+
+    &--list-wrapper {
+        justify-content: flex-start;
+        .conditions-card__desc {
+            flex: 0;
+        }
+    }
 }
 .conditions-card__desc {
     background-color: $default-color;
@@ -48,12 +55,16 @@
     align-items: center;
     text-align: center;
     // color: $default-color;
-    padding: 15px;
+    padding: 15px 75px;
     font-size: 1.1em; 
     line-height: 1.7;
     // transform:translateY(100%);
     // transition: all .4s ease;
     // opacity: 0;
+    @media (min-width: 768px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 .conditions-card__center {
@@ -72,4 +83,22 @@
     justify-content: center;
     align-items: center;
     padding: 15px;
+}
+
+.conditions-card__list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    flex: 1;
+}
+
+.conditions-card__list-item-icon {
+    // width: 20px;
+    // height: 20px;
+    color: $accent-color;
+    font-size: 1.5em;
+    padding: 0 20px;
+    line-height: 1;
 }
