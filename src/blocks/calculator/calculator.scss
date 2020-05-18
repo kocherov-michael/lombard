@@ -3,6 +3,18 @@
 .calculator {
     background-color: $background-dark-color;
     color: $default-color;
+
+    &--jewelry {
+        .calculator__input-item--money {
+            display: none;
+        }
+    }
+    &--else {
+        .calculator__input-item--weight,
+        .calculator__input-item--sample {
+            display: none;
+        }
+    }
 }
 
 .calculator__title {
@@ -27,6 +39,14 @@
     padding-top: 15px;
     padding-bottom: 15px;
     flex: 1;
+
+    &--period {
+        flex: 3;
+    }
+
+    input, select {
+        height: 45px;
+    }
 }
 
 .calculator__bottom {

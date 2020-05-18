@@ -1,19 +1,28 @@
-.calculator
+- var calculatorClass = 'calculator--else'
+- var calculatorClass = 'calculator--jewelry'
+
+
+.calculator(class=calculatorClass)
     .calculator__title Калькулятор займа
     .calculator__main
         .calculator__top
             .calculator__inputs
-                .calculator__input-item
+                .calculator__input-item.calculator__input-item--weight
                     +labelInput({ 
                         title: "Вес изделия:",
                         innerText: "гр."
                         }) 
-                .calculator__input-item
+                .calculator__input-item.calculator__input-item--sample
                     +labelInput({ 
                         title: "Проба:",
                         select: ["585", "750", "999"]
                     }) 
-                .calculator__input-item
+                .calculator__input-item.calculator__input-item--money
+                    +labelInput({ 
+                        title: "Сумма займа:",
+                        innerText: "руб."
+                        })
+                .calculator__input-item.calculator__input-item--period
                     +labelInput({ 
                         title: "Срок займа:",
                         select: [
