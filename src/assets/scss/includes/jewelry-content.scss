@@ -94,6 +94,13 @@
         
         .owl-item {
             // height: 300px;
+            display: flex;
+            // .img-card {
+            //     flex: 1;
+            // }
+            &>* {
+                flex: 1;
+            }
         }
 
         @media(min-width: 768px) {

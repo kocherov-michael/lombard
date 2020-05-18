@@ -1,0 +1,4 @@
+mixin imgCard(options)
+    //- .img-card(style="background-image: url("+options.background+")" data-img-card=options.background)
+    a.img-card(data-fancybox="gallery" href=options.background data-caption="")
+        img(src=options.background)
