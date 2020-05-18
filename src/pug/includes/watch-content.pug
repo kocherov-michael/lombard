@@ -181,3 +181,59 @@ main.page
                         text: "Перейти к каталогу",
                         link: "#"
                     })
+        .page__row
+            .block-double-carousel.block-double-carousel--items-8
+                .owl-carousel.owl-theme(data-owl-carousel="8")
+                    +card-link({
+                        title: "Шаговая доступность от метро",
+                        background: "src/assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Бесплатная оценка",
+                        background: "src/assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Карты лояльности",
+                        background: "src/assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Неограниченная сумма займа",
+                        background: "src/assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Опытные эксперты геммологи",
+                        background: "src/assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Конфиденциальность данных",
+                        background: "src/assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Частичное погашение займа",
+                        background: "src/assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Работаем ежедневно и без выходных",
+                        background: "src/assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+    .page__wide-block
+        +banner({
+            background: "src/assets/img/bg/bg1.jpg",
+            title: "Мы ценим ваше время",
+            subtitle: "Поэтому предлагаем оставить заявку",
+            button: "Оставить заявку",
+            link: "#",
+            icon: "zmdi-time"
+            })
+    .page__container.container
+        .page__title Основные условия займа
+        .page__row
+            include ../../blocks/conditions/conditions.pug
