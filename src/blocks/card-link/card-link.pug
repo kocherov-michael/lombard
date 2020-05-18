@@ -1,5 +1,26 @@
 mixin card-link(options)
-    if options.link
+    if options.class
+        if options.link
+            a.card-link(href=options.link  class=options.class style="background-image: url("+options.background+")")
+                .card-link__title
+                    .card-link__main-title #{options.title}
+                    if options.subtitle
+                        .card-link__subtitle #{options.subtitle}
+                .card-link__main 
+                    if options.desc
+                        .card-link__desc #{options.desc}
+
+        else
+            .card-link(class=options.class style="background-image: url("+options.background+")")
+                .card-link__title
+                    .card-link__main-title #{options.title}
+                    if options.subtitle
+                        .card-link__subtitle #{options.subtitle}
+                .card-link__main 
+                    if options.desc
+                        .card-link__desc #{options.desc}
+
+    else if options.link
         a.card-link(href=options.link style="background-image: url("+options.background+")")
             .card-link__title #{options.title}
             .card-link__main 
