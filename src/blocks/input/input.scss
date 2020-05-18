@@ -13,17 +13,17 @@
         outline: none;
         // box-shadow: $box-shadow;
     }
-    &--danger {
-        // background-color: $danger-color-light;
-    }
+    // &--danger {
+    //     // background-color: $danger-color-light;
+    // }
     &--readonly {
         &:focus {
             box-shadow: none;
         }
     }
-    &--focused {
-        // box-shadow: $box-shadow;
-    }
+    // &--focused {
+    //     // box-shadow: $box-shadow;
+    // }
 }
 
 .label {
@@ -89,9 +89,9 @@
     height: 100%;
     display: block;
     transition: all .4s ease;
-    &--danger {
-        // background-color: $danger-color-light;
-    }
+    // &--danger {
+    //     // background-color: $danger-color-light;
+    // }
 }
 .subscribe__submit {
     width: 100%;
@@ -110,9 +110,9 @@
     bottom: 0;
     width: auto;
 }
-.subscribe__submit:hover {
-    // background-color: $dark-color;
-}
+// .subscribe__submit:hover {
+//     // background-color: $dark-color;
+// }
 
 // .subscribe__success {
     
