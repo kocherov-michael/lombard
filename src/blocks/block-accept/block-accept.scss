@@ -14,8 +14,9 @@
     // background-color: red;
     flex: 0 1 30%;
     min-width: 200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    padding: 10px;
     @media(min-width: 768px) {
         order: -1;
     }

@@ -27,7 +27,7 @@ main.page
         .page__title 3 шага к получению денег
         .page__row
             .carousel-line-wrapper
-                .owl-carousel.owl-theme#carouselSteps
+                .owl-carousel.owl-theme#carouselSteps(data-owl-carousel="3")
                     +card-link({
                         title: "Посетить ближайший ломбард",
                         desc: "1",
@@ -62,7 +62,7 @@ main.page
         .page__title Примеры выданных займов
         .page__row
             .carousel-line-wrapper
-                .owl-carousel.owl-theme#carouselExamples
+                .owl-carousel.owl-theme#carouselExamples(data-owl-carousel="3")
                     +card-link({
                         title: "Вес — 31,31г.",
                         subtitle: "Сумма оценки — 11 300 руб.",
@@ -86,7 +86,7 @@ main.page
     .page__container.container
         .page__row
             .block-double-carousel.block-double-carousel--items-8
-                .owl-carousel.owl-theme#carouselAdvantage
+                .owl-carousel.owl-theme(data-owl-carousel="8")
                     +card-link({
                         title: "Шаговая доступность от метро",
                         background: "src/assets/img/img/card-link-1.jpg",

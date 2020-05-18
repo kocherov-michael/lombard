@@ -27,74 +27,114 @@ import './../blocks/conditions/conditions.js'
 import './../blocks/conditions-card/conditions-card.js'
 import './../blocks/footer/footer.js'
 
-$(document).ready(function() {
-    jQuery('#carouselSteps').owlCarousel({
-        items: 3, //Кол-во отображаемых элементов
-        loop:false, //Зацикливаем слайдер
-        margin:50, //Отступ от элемента справа в 50px
-        dots:true,
-        nav:true, //Отключение навигации
-        autoplay:false, //Автозапуск слайдера
-        smartSpeed:1000, //Время движения слайда
-        autoplayTimeout:2000, //Время смены слайда
-        responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
-            0:{
-                items:1
-            },
-            // 600:{
-            //     items:2
-            // },
-            768:{
-                items:3
-            }
-        }
-    });
-});
+// $(document).ready(function() {
+//     jQuery('#carouselSteps').owlCarousel({
+//         items: 3, //Кол-во отображаемых элементов
+//         loop:false, //Зацикливаем слайдер
+//         margin:50, //Отступ от элемента справа в 50px
+//         dots:true,
+//         nav:true, //Отключение навигации
+//         autoplay:false, //Автозапуск слайдера
+//         smartSpeed:1000, //Время движения слайда
+//         autoplayTimeout:2000, //Время смены слайда
+//         responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+//             0:{
+//                 items:1
+//             },
+//             // 600:{
+//             //     items:2
+//             // },
+//             768:{
+//                 items:3
+//             }
+//         }
+//     });
+// });
+
+// $(document).ready(function() {
+//     jQuery('#carouselExamples').owlCarousel({
+//         items: 3, //Кол-во отображаемых элементов
+//         loop:false, //Зацикливаем слайдер
+//         margin:50, //Отступ от элемента справа в 50px
+//         dots:true,
+//         nav:true, //Отключение навигации
+//         autoplay:false, //Автозапуск слайдера
+//         smartSpeed:1000, //Время движения слайда
+//         autoplayTimeout:2000, //Время смены слайда
+//         responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+//             0:{
+//                 items:1
+//             },
+//             // 600:{
+//             //     items:2
+//             // },
+//             768:{
+//                 items:3
+//             }
+//         }
+//     });
+// });
 
 $(document).ready(function() {
-    jQuery('#carouselExamples').owlCarousel({
-        items: 3, //Кол-во отображаемых элементов
-        loop:false, //Зацикливаем слайдер
-        margin:50, //Отступ от элемента справа в 50px
-        dots:true,
-        nav:true, //Отключение навигации
-        autoplay:false, //Автозапуск слайдера
-        smartSpeed:1000, //Время движения слайда
-        autoplayTimeout:2000, //Время смены слайда
-        responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
-            0:{
-                items:1
-            },
-            // 600:{
-            //     items:2
-            // },
-            768:{
-                items:3
-            }
-        }
-    });
-});
+    // jQuery('#carouselAdvantage').owlCarousel({
+    //     items: 8, //Кол-во отображаемых элементов
+    //     loop:false, //Зацикливаем слайдер
+    //     margin:50, //Отступ от элемента справа в 50px
+    //     dots:true,
+    //     nav:true, //Отключение навигации
+    //     autoplay:false, //Автозапуск слайдера
+    //     smartSpeed:1000, //Время движения слайда
+    //     autoplayTimeout:2000, //Время смены слайда
+    //     responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+    //         0:{
+    //             items:1
+    //         },
+    //         // 600:{
+    //         //     items:2
+    //         // },
+    //         768:{
+    //             items:8
+    //         }
+    //     }
+    // });
+    carouselHandler('data-owl-carousel')
 
-$(document).ready(function() {
-    jQuery('#carouselAdvantage').owlCarousel({
-        items: 8, //Кол-во отображаемых элементов
-        loop:false, //Зацикливаем слайдер
-        margin:50, //Отступ от элемента справа в 50px
-        dots:true,
-        nav:true, //Отключение навигации
-        autoplay:false, //Автозапуск слайдера
-        smartSpeed:1000, //Время движения слайда
-        autoplayTimeout:2000, //Время смены слайда
-        responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
-            0:{
-                items:1
-            },
-            // 600:{
-            //     items:2
-            // },
-            768:{
-                items:8
-            }
-        }
-    });
+    function carouselHandler(attr) {
+        const carouselList = document.querySelectorAll(`[${attr}]`)
+        carouselList.forEach((elem) => {
+            // console.log(elem)
+            const countInnerElem = elem.getAttribute(attr)
+            // console.log(countInnerElem)
+            
+            
+            
+            $(elem).owlCarousel({
+                items: countInnerElem, //Кол-во отображаемых элементов
+                loop:false, //Зацикливаем слайдер
+                margin:50, //Отступ от элемента справа в 50px
+                dots:true,
+                nav:true, //Отключение навигации
+                autoplay:false, //Автозапуск слайдера
+                smartSpeed:1000, //Время движения слайда
+                autoplayTimeout:2000, //Время смены слайда
+                responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+                    0:{
+                        items:1
+                    },
+                    // 600:{
+                    //     items:2
+                    // },
+                    768:{
+                        items:countInnerElem
+                    }
+                }
+            });
+
+            
+        })
+
+    }
+
+
+    // function owlCarouselCustom(attr) 
 });
