@@ -138,3 +138,10 @@ $(document).ready(function() {
 
     // function owlCarouselCustom(attr) 
 });
+
+const linksElem = document.querySelectorAll('a')
+linksElem.forEach(link => {
+    link.addEventListener('click', () => {
+        console.log('click')
+    })
+})
