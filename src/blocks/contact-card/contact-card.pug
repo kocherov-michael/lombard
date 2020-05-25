@@ -4,11 +4,27 @@ mixin contactCard(options)
             a.contact-card__link(link="lombard-address.html") #{options.title}
         .contact-card__main
             .contact-card__coordinates
-                //- .contact-card__metro Владимирская
-                .contact-card__address #{options.address}
+                .contact-card__item
+                    .contact-card__item-icon
+                        i.zmdi.zmdi-subway 
+                    .contact-card__item-text метро Владимирская
+                .contact-card__item
+                    .contact-card__item-icon
+                        i.zmdi.zmdi-pin 
+                    .contact-card__item-text #{options.address}
+                .contact-card__item
+                    .contact-card__item-icon
+                        i.zmdi.zmdi-email 
+                    .contact-card__item-text lombard@mail.ru
             .contact-card__mode
-                .contact-card__time #{options.time}
+                .contact-card__item
+                    .contact-card__item-icon
+                        i.zmdi.zmdi-time 
+                    .contact-card__item-text #{options.time}
             .contact-card__coontacts
-                .contact-card__phone #{options.phone}
-                //- .contact-card__mail mail@info.ru
+                .contact-card__item
+                    .contact-card__item-icon
+                        i.zmdi.zmdi-phone 
+                    .contact-card__item-text #{options.phone}
+                
 

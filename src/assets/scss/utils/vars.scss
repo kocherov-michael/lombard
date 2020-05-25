@@ -4,15 +4,19 @@ $iconicFont                : 'Material-Design-Iconic-Font';
 // $mainFont                :  sans-serif;
 // $secondaryFont           : 'BebasNeue Regular', sans-serif;
 
-$primary-color           : #0cbcd3; 
+// $primary-color           : #0cbcd3; 
 
-$primary-color           : #6C6F90;
+// $primary-color           : #6C6F90;
+$primary-color           : #3BB5A5;
+$primary-color           : #09A28D;
 // $primary-color           : #15276E;
           
 $secondary-color         : #1d85b6; 
 $primary-background-color: #E8E8EE ;     
-$background-dark-color   : #6C6F90 ;     
-$background-opacity-color: rgba(108,111,144,0.8) ;   
+$background-dark-color   : #6C6F90 ;  
+$background-dark-color   : $primary-color;
+// $background-opacity-color: rgba(108,111,144,0.8) ;   
+$background-opacity-color: rgba(10,163,143,0.8) ;   
 $accent-color            : #fc7654;  
 $accent-opacity-color    : rgba(252,118,84,.9);  
 $night                   : #15276E;

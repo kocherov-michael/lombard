@@ -9,14 +9,14 @@
 .contact-card__title {
     background-color: $primary-color;
     background-color: $background-opacity-color;
-    height: 50px;
+    min-height: 50px;
     color: $default-color;
     display: flex;
     // justify-content: center;
     align-items: center;
     // text-transform: uppercase;
     text-align: center;
-    padding: 0 15px;
+    padding: 10px 15px;
     line-height: 1.5;
     font-size: 1.2em;
     // font-weight: bold;
@@ -25,64 +25,67 @@
 .contact-card__main {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    
     @media (min-width: 768px) {
+        align-items: center;
         flex-direction: row;
     }
 }
 
 .contact-card__coordinates {
     flex: 1;
-    padding: 15px;
+    padding: 15px 15px 0;
+    @media (min-width: 768px) {
+        padding-bottom: 15px;
+    }
 }
 
 .contact-card__mode {
     flex: 0 1 25%;
-    padding: 15px;
+    padding: 0 15px;
     text-align: center;
+
+    @media (min-width: 768px) {
+        padding: 15px;
+        text-align: center;
+    }
 }
 
 .contact-card__coontacts {
     flex: 0 1 25%;
-    padding: 15px;
-    text-align: center;
+    min-width: 190px;
+    padding: 0 15px 15px;
+
+    @media (min-width: 768px) {
+        padding: 15px;
+        text-align: center;
+    }
 }
 
-.contact-card__phone,
-.contact-card__address,
-.contact-card__time {
-    display: inline-block;
-    // border: 1px solid green;
+.contact-card__item {
+    min-width: 190px;
     position: relative;
-    // padding-left: 30px;
     display: flex;
-    align-items: center;
-    &:before {
-        // position: absolute;
-        // top: 0;
-        // left: 0;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    &-icon {
+        text-align: center;
+        flex: 0 0 40px;
         width: 40px;
-        // content: "\f337";
         display: block;
         font-family: $iconicFont;
         font-size: 1.5em;
         color: $accent-color;
+        align-self: flex-start;
+    }
+    
+    &-text {
+        line-height: 1.5;
+    }
+    @media (min-width: 768px) {
+        align-items: center;
     }
 }
 
-.contact-card__address {
-    &:before {
-        content: "\f1ab";
-    }
-}
-.contact-card__time {
-    &:before {
-        content: "\f337";
-    }
-}
-.contact-card__phone {
-    &:before {
-        content: "\f2be";
-    }
-}
