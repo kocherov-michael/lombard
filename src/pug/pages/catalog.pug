@@ -1,0 +1,10 @@
+extends ../layout/page.pug
+
+block variables
+    - var title = 'Каталог';
+
+block content
+    include ../../blocks/header/header.pug
+    include ../../blocks/menu/menu.pug
+    include ../includes/catalog-content.pug
+    include ../../blocks/footer/footer.pug

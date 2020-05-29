@@ -1,0 +1,48 @@
+.block-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block-grid__item {
+    border: 1px solid green;
+    flex: 0 1 100%;
+    // padding: 0 0 80% 0;
+
+    .card-link.example {
+        
+        @media (min-width: 600px) {
+            min-height: auto;
+            
+        }
+    }
+    @media (min-width: 600px) and (max-width: 767px) {
+        flex: 0 1 50%;
+        padding-bottom: 50%;
+        position: relative;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        flex: 0 1 33.33%;
+        padding-bottom: 40%;
+        position: relative;
+    }
+    @media (min-width: 992px) {
+        flex: 0 1 25%;
+        padding-bottom: 30%;
+        position: relative;
+    }
+}
+.block-grid__resized-container {
+    padding: 10px;
+    @media (min-width: 600px) {
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        width: 100%;
+        height: 100%;
+    }
+    border: 1px solid red;
+}
