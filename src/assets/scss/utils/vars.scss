@@ -7,8 +7,8 @@ $iconicFont                : 'Material-Design-Iconic-Font';
 // $primary-color           : #0cbcd3; 
 
 // $primary-color           : #6C6F90;
-$primary-color           : #3BB5A5;
-$primary-color           : #09A28D;
+// $primary-color           : #3BB5A5;
+$primary-color           : #21ccb5;
 // $primary-color           : #15276E;
           
 $secondary-color         : #1d85b6; 
@@ -16,7 +16,8 @@ $primary-background-color: #E8E8EE ;
 $background-dark-color   : #6C6F90 ;  
 $background-dark-color   : $primary-color;
 // $background-opacity-color: rgba(108,111,144,0.8) ;   
-$background-opacity-color: rgba(10,163,143,0.8) ;   
+// $background-opacity-color: rgba(10,163,143,0.8) ;   
+$background-opacity-color: rgba(33, 204, 181,0.9) ;   
 $accent-color            : #fc7654;  
 $accent-opacity-color    : rgba(252,118,84,.9);  
 $night                   : #15276E;
@@ -30,3 +31,7 @@ $neutral-background-color: #F6F6F7;
 $neutral-primary-color   : #A7A7A7;
 $neutral-secondary-color : #636363;
 $dark-color              : #232323;
+
+$ira-bg-color-80            : rgba(10, 22, 78,.8);
+$ira-bg-color           : #0a164e;
+$box-shadow-30          : rgba(0,0,0,0.3);

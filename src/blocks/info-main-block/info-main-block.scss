@@ -14,13 +14,14 @@
 
 .info-main-block__text-wrapper {
     padding-left: 30px;
-    border-left: 2px solid $primary-color;
+    // border-left: 2px solid $primary-color;
     line-height: 1.7;
 }
 
 .info-main-block__title {
     font-size: 1.7em;
-    color: $accent-color;
+    // color: $accent-color;
+    color: $primary-color;
     font-weight: bold;
     line-height: 1.1;
 }

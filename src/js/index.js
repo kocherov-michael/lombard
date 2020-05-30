@@ -25,6 +25,7 @@ import './../blocks/block-accept/block-accept.js'
 import './../blocks/img-card/img-card.js'
 // import './../blocks/steps/steps.js'
 import './../blocks/map/map.js'
+import './../blocks/img-slider/img-slider.js'
 import './../blocks/product-item/product-item.js'
 import '../blocks/contact-card/contact-card.js'
 import './../blocks/conditions/conditions.js'
@@ -72,6 +73,8 @@ $(document).ready(function() {
         })
 
     }
+
+    
 
 
     // function owlCarouselCustom(attr) 

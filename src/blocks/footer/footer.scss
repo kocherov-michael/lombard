@@ -2,7 +2,9 @@
 
 .footer {
     min-height: 300px;
-    background-color: $neutral-background-color;
+    // background-color: $neutral-background-color;
+    background-color: $ira-bg-color;
+    color: $default-color;
     padding-top: 50px;
 }
 
@@ -30,9 +32,17 @@
 }
 
 .footer__logo {
-    height: 50px;
-    display: flex;
-    align-items: center;
+    // height: 50px;
+    // display: flex;
+    // align-items: center;
+    padding-bottom: 20px;
+    svg  path {
+        fill: #fff;
+    }
+
+    .logo__title {
+        color: $default-color;
+    }
 }
 .footer__logo-img {
     width: 50px;

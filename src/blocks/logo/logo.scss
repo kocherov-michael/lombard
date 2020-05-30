@@ -1,13 +1,35 @@
 @import "../../assets/scss/utils/vars.scss";
 
+// .logo {
+//     max-height: 100%;
+//     display: block;
+//     // height: 260px;
+//     // padding: 20px;
+//     // display: flex;
+//     // justify-content: center;
+//     // align-items: center;
+//     // path {
+//     //     fill: $ira-bg-color;
+//     // }
+// }
 .logo {
-    max-height: 100%;
-    display: block;
-    // height: 260px;
-    // padding: 20px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    // height: 50px;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    // text-align: center;
+    text-decoration: none;
+    // color: #000;
+    cursor: pointer;
+    // border: 1px solid red;
+    align-items: stretch;
+}
+
+.logo__img-container {
+    width: 70px;
+    height: 70px;
+    flex: 0 1 70px;
+    // border: 1px solid red;
 }
 
 .logo__img {
@@ -15,3 +37,33 @@
     max-height: 100%;
     // object-fit: contain;
 }
+
+.logo__text {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // height: 100%;
+    // border: 1px solid red;
+}
+
+.logo__title {
+    color: $ira-bg-color;
+    line-height: 1.2;
+    font-size: 1.1em;
+}
+
+.logo__title-main {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .09em;
+}
+
+.logo__subtitle {
+    // line-height: 1.7;
+    color: $primary-color;
+    white-space: nowrap;
+    font-size: 1.2em;
+    letter-spacing: -.05em;
+}
+

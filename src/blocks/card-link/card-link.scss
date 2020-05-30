@@ -45,7 +45,8 @@
     // background-size: cover;
 }
 .card-link__desc {
-    background-color: $accent-opacity-color;
+    // background-color: $accent-opacity-color;
+    background-color: $ira-bg-color-80;
     // height: 130px;
     display: flex;
     flex: 1;
@@ -54,7 +55,7 @@
     text-align: center;
     color: $default-color;
     padding: 15px;
-    font-size: 1.1em; 
+    font-size: .9em; 
     line-height: 1.7;
     transform:translateY(100%);
     transition: all .4s ease;

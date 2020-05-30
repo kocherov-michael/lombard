@@ -10,13 +10,15 @@
     // text-transform: uppercase;
     text-align: center;
     color: $default-color;
-    background-color: $primary-color;
+    // background-color: $primary-color;
+    background-color: $ira-bg-color;
     font-size: 2em;
     font-weight: bold;
 }
 
 .table-gold__grid {
-    background-color: $primary-color;
+    // background-color: $primary-color;
+    background-color: $ira-bg-color;
     padding-top: 20px;
     padding-bottom: 10px;
 }
@@ -32,7 +34,8 @@
 
     &--head {
         font-weight: bold;
-        background-color: $primary-color;
+        // background-color: $primary-color;
+        background-color: $ira-bg-color;
         color: $default-color;
         .table-gold__value {
             border-color: $default-color;
