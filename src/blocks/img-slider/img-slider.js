@@ -8,10 +8,6 @@ function imgSlider(attr) {
 
         const imgList = elem.querySelectorAll('img')
         const imgCount = imgList.length
-        console.log(elem.children.length)
-        // const countInnerElem = elem.getAttribute(imgCount)
-        // console.log(countInnerElem)
-        
         
         
         $(elem).owlCarousel({
