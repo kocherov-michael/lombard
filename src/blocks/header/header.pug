@@ -1,5 +1,18 @@
 header.header.container
     .header__logo 
         include ../logo/logo.pug
-    .header__center РАБОТАЕМ: С 8-20 ЧАСОВ
-    .header__phone 8-800-123-45-67
+    .header__center
+        .header__item
+            .header__item-icon
+                i.zmdi.zmdi-time
+            .header__item-text РАБОТАЕМ: С 8-20 ЧАСОВ
+        .header__item
+            .header__item-icon
+                i.zmdi.zmdi-pin 
+            a.header__item-text(href="contacts.html") Выбрать ломбард
+    .header__phone 
+        .header__number 8-800-123-45-67
+        .header__item
+            .header__item-icon
+                i.zmdi.zmdi-phone-in-talk 
+            a.header__item-text(href="#") Заказать звонок
