@@ -42,7 +42,8 @@ $(document).ready(function() {
         const carouselList = document.querySelectorAll(`[${attr}]`)
         carouselList.forEach((elem) => {
             // console.log(elem)
-            const countInnerElem = elem.getAttribute(attr)
+            // const countInnerElem = elem.getAttribute(attr)
+            const countInnerElem = elem.children.length
             // console.log(countInnerElem)
             
             
