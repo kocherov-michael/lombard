@@ -1,0 +1,17 @@
+extends ../layout/page.pug
+
+block variables
+    - var title = 'Вакансии';
+
+block content
+    include ../../blocks/header/header.pug
+    include ../../blocks/menu/menu.pug
+    main.page
+        .page__container.container
+            .page__title Вакансии
+            .page__row
+                .page__text 
+                    p Наша Сеть ломбардов постоянно растет и набирает новых сотрудников.
+                    p Мы ищем как высококвалифицированных специалистов, так и специалистов без опыта работы, желающих учиться в новой для себя сфере.
+                    p Отправить резюме можно на электронную посту: d.ruchiy@doveriegroup.ru
+    include ../../blocks/footer/footer.pug

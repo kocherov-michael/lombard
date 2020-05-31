@@ -1,0 +1,10 @@
+extends ../layout/page.pug
+
+block variables
+    - var title = 'Блог';
+
+block content
+    include ../../blocks/header/header.pug
+    include ../../blocks/menu/menu.pug
+    include ../includes/blog-content.pug
+    include ../../blocks/footer/footer.pug
