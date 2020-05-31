@@ -4,14 +4,26 @@ footer.footer
             .footer__store
                 .footer__logo
                     include ../logo/logo.pug
-                .footer__desc Сеть ломбардов, 2017 г.Все права защищены.
+                .footer__number 8-800-123-45-67
+                .footer__item
+                    .footer__item-icon
+                        i.zmdi.zmdi-phone-in-talk 
+                    a.footer__item-text(href="#") Заказать звонок
+                .footer__item
+                    .footer__item-icon
+                        i.zmdi.zmdi-pin 
+                    a.footer__item-text(href="contacts.html") Выбрать ломбард
+                
             .footer__links
-                .footer__link О компании
-                .footer__link Контакты
-                .footer__link Мы принимаем в залог
-                .footer__link Скупка
-            .footer__news
-                .footer__link Новости
-                .footer__link Акции
-                .footer__link Изделия в продаже
-        .footer__bottom
+                .footer__info-links
+                    a.footer__link(href="about.html") О компании
+                    a.footer__link(href="contacts.html") Контакты
+                    a.footer__link(href="#") Мы принимаем в залог
+                    a.footer__link(href="#") Скупка
+                .footer__news-links
+                    a.footer__link(href="#") Новости
+                    a.footer__link(href="#") Акции
+                    a.footer__link(href="onsale.html") Изделия в продаже
+    .footer__bottom
+        .container
+            .footer__desc Универсальный ломбард №1, 2020 г. Все права защищены.
