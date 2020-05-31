@@ -1,0 +1,37 @@
+.page__images {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.page__images-item {
+    flex: 0 1 100%;
+    // border: 1px solid red;
+    padding: 10px;
+
+    .img-card {
+        height: 100%;
+        width: 100%;
+        // border-radius: 10px;
+        // overflow: hidden;
+    }
+    
+    img {
+        // max-width: 100%;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+    @media(min-width: 400px) and (max-width: 767px) {
+        flex: 0 1 50%;
+    }
+
+    @media(min-width: 768px) {
+        flex: 0 1 33.3333%;
+    }
+    @media(min-width: 992px) {
+        flex: 0 1 25%;
+    }
+}
+
