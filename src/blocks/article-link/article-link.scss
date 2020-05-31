@@ -1,0 +1,29 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.article-link {
+    border: 1px solid $primary-color;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-link__title {
+    padding: 10px;
+    color: $primary-color;
+    line-height: 1.3;
+    font-size: 1.3em;
+    flex: 1 1;
+}
+
+.article-link__desc {
+    padding: 10px;
+    line-height: 1.3;
+    flex: 0 0;
+}
+
+.article-link__bottom {
+    display: flex;
+    padding: 10px;
+    flex: 0 0 70px;
+    align-items: flex-end;
+}

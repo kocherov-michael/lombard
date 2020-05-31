@@ -26,6 +26,7 @@
     font-size: 18px;
     font-weight: 500;
     // padding: 15px 0 15px 0;
+    text-decoration: none;
     
     &:hover {
         box-shadow: 0 0 3px 0 #fc7654;
@@ -36,6 +37,17 @@
     &:active, &:focus {
         outline: none;
         
+    }
+
+    &--accent {
+        
+        color: $default-color;
+        // text-transform: uppercase;
+        background-color: $accent-color;
+        &:hover {
+            background-color: $default-color;
+            color: $accent-color;
+        }
     }
 
     &--primary {
