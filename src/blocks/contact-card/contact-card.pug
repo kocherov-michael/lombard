@@ -1,13 +1,13 @@
 mixin contactCard(options)
-    .contact-card
-        .contact-card__title
-            a.contact-card__link(link="lombard-address.html") #{options.title}
+    .contact-card(data-contact-card data-coordinatesX=options.x data-coordinatesY=options.y data-coordinates-title=options.title )
+        a.contact-card__title(href="lombard-address.html")
+            .contact-card__link #{options.title}
         .contact-card__main
             .contact-card__coordinates
                 .contact-card__item
                     .contact-card__item-icon
                         i.zmdi.zmdi-subway 
-                    .contact-card__item-text метро Владимирская
+                    .contact-card__item-text #{options.metro}
                 .contact-card__item
                     .contact-card__item-icon
                         i.zmdi.zmdi-pin 
@@ -15,7 +15,7 @@ mixin contactCard(options)
                 .contact-card__item
                     .contact-card__item-icon
                         i.zmdi.zmdi-email 
-                    .contact-card__item-text lombard@mail.ru
+                    .contact-card__item-text #{options.email}
             .contact-card__mode
                 .contact-card__item
                     .contact-card__item-icon
