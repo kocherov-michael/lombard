@@ -1,27 +1,36 @@
 mixin article-link(options)
-    if options.img
-        .article-link
+    if options.link
+        a.article-link(href=options.href)
             .article-link__top
                 img.article-link__img(src=options.img)
             .article-link__title #{options.title}
             .article-link__desc #{options.desc}
-            .article-link__bottom
-                .article-link__button
-                    +button({
-                        color: "accent",
-                        text: "Подробнее",
-                        href: "article.html"
-                    })
+                
 
     else
-        .article-link
-            .article-link__title #{options.title}
-            .article-link__desc #{options.desc}
-            .article-link__bottom
-                .article-link__button
-                    +button({
-                        color: "accent",
-                        text: "Подробнее",
-                        href: "article.html"
-                    })
+        if options.img
+            .article-link
+                .article-link__top
+                    img.article-link__img(src=options.img)
+                .article-link__title #{options.title}
+                .article-link__desc #{options.desc}
+                .article-link__bottom
+                    .article-link__button
+                        +button({
+                            color: "accent",
+                            text: "Подробнее",
+                            href: "article.html"
+                        })
+
+        else
+            .article-link
+                .article-link__title #{options.title}
+                .article-link__desc #{options.desc}
+                .article-link__bottom
+                    .article-link__button
+                        +button({
+                            color: "accent",
+                            text: "Подробнее",
+                            href: "article.html"
+                        })
     

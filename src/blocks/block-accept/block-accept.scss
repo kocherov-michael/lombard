@@ -8,6 +8,11 @@
     @media(min-width: 768px) {
         flex-direction: row;
     }
+
+    .block-double-carousel, .owl-carousel, .owl-stage-outer {
+        height: 100%;
+        // border: 1px solid red;
+    }
 }
 
 .block-accept__aside {
@@ -25,7 +30,7 @@
 .aside-list {
     border-radius: 10px;
     overflow: hidden;
-    background-color: yellow;
+    // background-color: yellow;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -41,6 +46,11 @@
     background-color: $primary-color;
     color: $default-color;
     padding: 20px;
+
+    @media(min-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 .block-accept__slider {
