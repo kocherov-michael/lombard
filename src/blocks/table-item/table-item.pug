@@ -1,0 +1,18 @@
+mixin tableItem(options)
+    //- name: "Золото",
+    //- sample: "375",
+    //- price1: "1288",
+    //- price2: "1326",
+    //- price3: "1401",
+    .table-item
+        .table-item__name #{options.name}
+        .table-item__sample 
+            .table-item__sample-value #{options.sample}
+            .table-item__sample-text проба
+        .table-item__price
+            .table-item__price-value
+                .table-item__price-wrapper
+                    .table-item__price-item.table-item__price-item--1 #{options.price1}
+                    .table-item__price-item.table-item__price-item--2 #{options.price2}
+                    .table-item__price-item.table-item__price-item--3 #{options.price3}
+            .table-item__price-text рублей
