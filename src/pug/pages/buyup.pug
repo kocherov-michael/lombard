@@ -1,0 +1,11 @@
+extends ../layout/page.pug
+
+block variables
+    - var title = 'В продаже';
+    - var calculatorClass = 'calculator--buyup';
+
+block content
+    include ../../blocks/header/header.pug
+    include ../../blocks/menu/menu.pug
+    include ../includes/buyup-content.pug
+    include ../../blocks/footer/footer.pug

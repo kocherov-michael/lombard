@@ -1,0 +1,133 @@
+main.page
+    .page__wide-block
+        +banner({
+            background: "assets/img/bg/bg1.jpg",
+            title: "У нас уже 12 ломбардов",
+            subtitle: "Выберите ближайший к вам",
+            button: "Выбрать ломбард",
+            link: "#",
+            icon: "zmdi-pin"
+            })
+    .page__container.container
+        .page__title Текущие расценки на скупку золота<br> Цены указаны за грамм
+        .page__row
+            
+    .page__wide-block
+        .wide-block(style="background-image: url(src/assets/img/bg/bg2.jpg)")
+            .wide-block__fade
+                .wide-block__wrapper.container
+                    .wide-block__container
+                        include ../../blocks/calculator/calculator.pug
+    .page__container.container
+        .page__title Мы принимаем в нашу скупку
+        .page__row
+            .block-double-carousel.block-double-carousel--items-6
+                .owl-carousel.owl-theme#carouselAdvantage(data-owl-carousel="6")
+                    +card-link({
+                        title: "Кольца",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Серьги",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Цепи",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Браслеты",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Бриллианты",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Лом золота",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+    .page__wide-block
+        +banner({
+            background: "assets/img/bg/bg1.jpg",
+            title: "У нас уже 12 ломбардов",
+            subtitle: "Выберите ближайший к вам",
+            button: "Выбрать ломбард",
+            link: "#",
+            icon: "zmdi-pin"
+            })
+    .page__container.container
+        .page__title Примеры выкупленных изделий
+        .page__row
+            .carousel-line-wrapper
+                .owl-carousel.owl-theme#carouselExamples(data-owl-carousel="3")
+                    +card-link({
+                        title: "Вес — 31,31г.",
+                        subtitle: "Сумма оценки — 11 300 руб.",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "example"
+                        })
+                    +card-link({
+                        title: "Вес — 5.58г.",
+                        subtitle: "Сумма оценки — 141 300 руб.",
+                        background: "assets/img/img/card-link-2.jpg",
+                        class: "example"
+                        })
+                    +card-link({
+                        title: "Вес — 11,53г.",
+                        subtitle: "Сумма оценки — 41 300 руб.",
+                        background: "assets/img/img/card-link-3.jpg",
+                        class: "example"
+                        })
+        .page__title Наши преимущества
+        .page__row
+            .block-double-carousel.block-double-carousel--items-6
+                .owl-carousel.owl-theme(data-owl-carousel="6")
+                    +card-link({
+                        title: "Шаговая доступность от метро",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Бесплатная оценка",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Наличные деньги за 5 минут",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Максимально высокая оценка изделий",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Конфиденциальность данных",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+                    +card-link({
+                        title: "Индивидуальный подход",
+                        background: "assets/img/img/card-link-1.jpg",
+                        class: "advantage"
+                        })
+    .page__wide-block
+        .wide-block(style="background-image: url(src/assets/img/bg/bg2.jpg)")
+            .wide-block__fade
+                .wide-block__wrapper.container
+                    .wide-block__container
+                        include ../../blocks/evaluation/evaluation.pug
+    .page__container.container
+        .page__row
+            p Скупка золота, серебра и ювелирных украшений.
+            p В Ломбард Доверие вы можете не только осуществить залог ювелирных изделий, техники, шуб и прочего имущества. Но также мы осуществляем скупку золота, скупку серебра и скупку других ювелирных изделий. При этом вы получаете наличные средства сразу, вам не придется оформлять займ и осуществлять прочие процедуры, которые предшествуют получению денег на ломбардных условиях. Вы просто приносите нам свои ювелирные изделия и продаете их. Также, в отличии от других скупок, в Ломбарде Доверие вы можете выкупить ваше изделия обратно, на тех же условиях, что и тогда, когда продавали его. Это особая услуга для наших клиентов, которая предоставляется только в сети ломбардов Доверие. Для скупки мы принимаем золотые изделия проб: 375, 500, 585, 750, 833, 900, 916, 958, 999. Категории золота которые мы принимаем: 1-я, 2-я, 3-я.
+            p Отличия категорий золота:
+            p 1-я категория: самая дешевая категория золота, сюда попадают изделия с различными дефектами, буквально, части изделий, поломанные изделия, те изделия, где невозможно прочитать клеймо пробирной палаты, изделия с клеймами иностранных пробирных палат, а также зубное золото любого вида. 2-я категория: по своей сути это основная категория ювелирных изделий. Сюда попадают изделия не требующие ремонта, в хорошем состоянии. Изделия без видимых дефектов, с маленькой степенью износа или совсем без дефектов. Изделия отечественного производства (особенно СССР), имеющие полное клеймение. Импортного производства, имеющие клеймо российской пробирной инспекции. Ювелирные изделия с классическим дизайном. 3-я категория: это высшая категория, она же и самая дорогая. В данную категорию входят: изделия со вставкой из бриллиантов разной каратности, которые не требуют ремонта и подходят для последующей продажи. Изделия без дефектов, которые подходят для продажи и не имеют износа. Новые изделия. Отечественного производства, имеющие полное клеймение. Импортного производства, имеющие клеймо российской пробирной инспекции. Отдельным прейскурантом проходит скупка ювелирных изделий класса люкс, а также бриллиантов от 0.3 карата. В данном случае оценка проходит в индивидуальном порядке с нашим ювелиров. В стоимости изделия мы учитываем стоимость золота в изделии, цена рассчитывается из действующего прейскуранта согласно пробе золота и состоянии изделия, также отдельно оцениваются драгоценные камни, помимо этого мы берем в расчет текущую рыночную стоимость изделия, которая также модулирует итоговую стоимость. Итоговая оценка вещи происходит по обоюдному согласовании сторон с учетом предложенной специалистом ломбарда Доверие цены.
