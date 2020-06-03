@@ -2,7 +2,13 @@
 
 .table-prices-head {
     display: flex;
-    height: 180px;
+    flex-direction: column;
+    overflow: hidden;
+    
+    @media(min-width: 768px) {
+        height: 180px;
+        flex-direction: row;
+    }
 }
 
 .table-prices-head__blocks {
@@ -11,6 +17,10 @@
     // position: absolute;
     display: flex;
     background-color: $neutral-background-color;
+    flex-wrap: wrap;
+    @media(min-width: 768px) {
+        flex-wrap: nowrap;
+    }
 }
 
 
@@ -21,26 +31,54 @@
     align-items: center;
     background-color: $neutral-primary-color;
     position: relative;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
     &:after, &:before {
         display: block;
         content: "";
         position: absolute;
-        top: 0;
-        left: 100%;
-        bottom: 0;
-        border-left: 20px solid $neutral-primary-color;
-        border-top: 90px solid transparent;
-        border-bottom: 90px solid transparent;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        border-left: calc((50vw - 15px) / 3) solid rgba(0, 0, 0, 0);
+        border-right: calc((50vw - 15px) / 3) solid rgba(0, 0, 0, 0);
+        border-top: 20px solid $neutral-primary-color;
+        // border-left: 20px solid $neutral-primary-color;
+        // border-top: 90px solid transparent;
+        // border-bottom: 90px solid transparent;
         z-index: 10;
         height: 0;
         transition: all .4s ease;
+        @media(min-width: 768px) {
+            top: 0;
+            left: 100%;
+            bottom: 0;
+            right: auto;
+            border-left: 20px solid $neutral-primary-color;
+            border-top: 90px solid transparent;
+            border-bottom: 90px solid transparent;
+            border-right: 0;
+        }
     }
     &:before {
-        left: calc(100% + 1px);
-        border-left: 20px solid $default-color;
-        z-index: 9;
+        display: none;
+        @media(min-width: 768px) {
+            display: block;
+            left: calc(100% + 1px);
+            border-left: 20px solid $default-color;
+            z-index: 9;
+        }
     }
+
+    // @media(min-width: 768px) {
+    //     &:after, &:before {
+    //         border-left: 20px solid $neutral-primary-color;
+    //         border-top: 90px solid transparent;
+    //         border-bottom: 90px solid transparent;
+    //     }
+    // }
     
     
 }
@@ -49,31 +87,60 @@
     color: $default-color;
     background-color: $secondary-color;
     padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
     &:after {
-        border-left-color: $secondary-color;
+        border-left: calc((50vw - 15px) ) solid rgba(0, 0, 0, 0);
+        border-right: calc((50vw - 15px) ) solid rgba(0, 0, 0, 0);
+        border-top: 20px solid $secondary-color;
+        // border-left-color: $secondary-color;
+        @media(min-width: 768px) {
+            border-left-color: $secondary-color;
+        }
+    }
+
+    flex: 1 0 100%;
+    @media(min-width: 768px) {
+        // padding-top: 20px;
+        flex: 0 1 auto;
     }
 }
 
 .table-prices-head__blocks-item {
     cursor: pointer;
-    padding-left: 40px;
-    padding-right: 10px;
+    
+    padding-top: 20px;
     color: $neutral-secondary-color;
     font-size: 2em;
     transition: all .4s ease;
+    display: flex;
+    justify-content: center;
 
     &--active {
         color: $secondary-color;
         background-color: $primary-color;
         &:after {
-            border-left-color: $primary-color;
+            border-top-color: $primary-color;
+            @media(min-width: 768px) {
+                border-top-color: transparent;
+                border-left-color: $primary-color;
+            }
         }
+    }
+
+    flex: 1 0 33.3333%;
+    @media(min-width: 768px) {
+        padding-left: 40px;
+        padding-right: 10px;
+        padding-top: 0;
+        flex: 0 1 auto;
     }
 }
 
 .table-prices-head__desc {
     flex: 1;
-    // border: 1px solid red;
     overflow: hidden;
     background-color: $neutral-background-color;
 }
@@ -104,9 +171,19 @@
 }
 .table-prices-head__desc-item {
     flex: 1 0 100%;
-    padding: 20px;
-    padding-left: 40px;
+    
+    // padding: 20px;
+    // padding-top: 40px;
+    padding: 40px 20px 20px;
     opacity: 0;
     transition: opacity .4s ease;
+    @media(min-width: 768px) {
+        // padding-left: 40px;
+        // padding-top: 20px;
+        padding: 10px 10px 10px 40px;
+    }
 
+    @media(min-width: 820px) {
+        padding: 20px 20px 20px 40px;
+    }
 }
