@@ -15,12 +15,21 @@ function dropdownDescHandler() {
     
     dropdownDescList.forEach((element) => {
         element.addEventListener('click', (event) => {
-            // закрываем у всех текст
-            dropdownDescList.forEach((element) => {
+            if(element.classList.contains('dropdown-desc--open')) {
                 element.classList.remove('dropdown-desc--open')
-            })
-            // открываем текст только у выбранного
-            element.classList.add('dropdown-desc--open')
+            } else {
+
+                // закрываем у всех текст
+                dropdownDescList.forEach((el) => {
+                    
+                    if (el == element) {
+                        // открываем текст только у выбранного
+                        element.classList.add('dropdown-desc--open')
+                    } else {
+                        el.classList.remove('dropdown-desc--open')
+                    }
+                })
+            }
 
 
         })
