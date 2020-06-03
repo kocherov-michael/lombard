@@ -2,17 +2,27 @@
 
 
 .evaluation {
+    padding-top: 30px;
+    padding-bottom: 30px;
     // background-color: $primary-color;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
 }
-.evaluation__fade {
-    height: 100%;
-    width: 100%;
-    // background-color: $background-opacity-color;
-    background-color: $ira-bg-color-80;
-}
+// .evaluation__fade {
+//     height: 100%;
+//     width: 100%;
+//     // background-color: $background-opacity-color;
+//     background-color: $ira-bg-color-80;
+// }
+// .evaluation__wrapper {
+//     display: flex;
+// }
+
+// .evaluation__container {
+//     margin: 0 auto;
+//     padding: 30px;
+// }
 
 .evaluation__title {
     text-align: center;
@@ -22,14 +32,6 @@
     font-weight: bold;
 }
 
-.evaluation__wrapper {
-    display: flex;
-}
-
-.evaluation__container {
-    margin: 0 auto;
-    padding: 30px;
-}
 
 .eval-form__item {
     padding: 15px;

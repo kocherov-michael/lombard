@@ -170,7 +170,11 @@ main.page
                         class: "example"
                         })
     .page__wide-block
-        include ../../blocks/evaluation/evaluation.pug
+        .wide-block(style="background-image: url(src/assets/img/bg/bg2.jpg)")
+            .wide-block__fade
+                .wide-block__wrapper.container
+                    .wide-block__container
+                        include ../../blocks/evaluation/evaluation.pug
     .page__container.container
         .page__row
             .block-double-carousel.block-double-carousel--items-8

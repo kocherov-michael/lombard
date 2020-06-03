@@ -28,3 +28,24 @@ main {
 .br {
     border: 1px solid red;
 }
+
+.wide-block {
+    // background-color: $primary-color;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__fade {
+        height: 100%;
+        width: 100%;
+        // background-color: $background-opacity-color;
+        background-color: $ira-bg-color-80;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    
+    &__container {
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+}

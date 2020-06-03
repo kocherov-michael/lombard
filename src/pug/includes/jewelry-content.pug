@@ -3,14 +3,22 @@ main.page
         .page__row
             p.page__desc.fw-bold Золото, бриллианты и серебро
             p.page__desc.fw-bold Сеть Ломбардов в Санкт-Петербурге (10 отделений). Займ/кредит под залог ювелирных изделий, драгоценных камней
-        .page__row
-            .page__split
-                .page__split-left.flex-basis-40
-                    .calculator-aside(style="background-image: url(./assets/img/bg/gold-bg.jpg)")
-                        .calculator-aside__content 
-                            .calculator-aside__text ЦЕНА НА ЗОЛОТО 585<br> ДО 2 185 РУБЛЕЙ<br> ЗА 1 ГРАММ 
-                .page__split-rigth.flex-basis-60
-                    include ../../blocks/calculator/calculator.pug
+        //- .page__row
+        //-     .page__split
+        //-         .page__split-left.flex-basis-40
+        //-             .calculator-aside(style="background-image: url(./assets/img/bg/gold-bg.jpg)")
+        //-                 .calculator-aside__content 
+        //-                     .calculator-aside__text ЦЕНА НА ЗОЛОТО 585<br> ДО 2 185 РУБЛЕЙ<br> ЗА 1 ГРАММ 
+        //-         .page__split-rigth.flex-basis-60
+        //-             include ../../blocks/calculator/calculator.pug
+        .page__title Цена на золото 585 до 2 185 рублей за 1 грамм
+    .page__wide-block
+        .wide-block(style="background-image: url(src/assets/img/bg/bg2.jpg)")
+            .wide-block__fade
+                .wide-block__wrapper.container
+                    .wide-block__container
+                        include ../../blocks/calculator/calculator.pug
+    .page__container.container
         .page__title Мы принимаем в наши ломбарды
         .page__row
             include ../../blocks/block-accept/block-accept.pug
@@ -82,7 +90,11 @@ main.page
                         class: "example"
                         })
     .page__wide-block
-        include ../../blocks/evaluation/evaluation.pug
+        .wide-block(style="background-image: url(src/assets/img/bg/bg2.jpg)")
+            .wide-block__fade
+                .wide-block__wrapper.container
+                    .wide-block__container
+                        include ../../blocks/evaluation/evaluation.pug
     .page__container.container
         .page__row
             .block-double-carousel.block-double-carousel--items-8

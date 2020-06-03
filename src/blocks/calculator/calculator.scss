@@ -2,8 +2,10 @@
 
 .calculator {
     // background-color: $background-dark-color;
-    background-color: $ira-bg-color-80;
+    // background-color: $ira-bg-color-80;
     color: $default-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     &--jewelry {
         .calculator__input-item--money {
