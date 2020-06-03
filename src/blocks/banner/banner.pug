@@ -1,13 +1,38 @@
 mixin banner(options)
-    .banner(style="background-image: url("+options.background+")")
-        .banner__content
-            .banner__container
-                .banner__head
-                    .banner__title #{options.title}
-                    .banner__subtitle #{options.subtitle}
-                    .banner__icon
-                        i.zmdi(class=options.icon)
-                .banner__button
-                    //- a.banner__link(href=options.link) #{options.button}
-                    .banner__link
-                        +button({text: options.button})
+    if options.view==="subtop"
+        .banner.banner--subtop(style="background-image: url("+options.background+")")
+            .banner__content
+                .banner__container
+                    .banner__head
+                        .banner__item
+                            a.banner__item-link(href=options.topLink)
+                                .banner__item-icon
+                                    i.zmdi.zmdi-pin 
+                                .banner__item-text 10 отделений
+                        .banner__title #{options.title}
+                        .banner__subtitle #{options.subtitle}
+                        if options.icon
+                            .banner__icon
+                                i.zmdi(class=options.icon)
+                    .banner__button
+                        //- a.banner__link(href=options.link) #{options.button}
+                        .banner__link
+                            +button({text: options.button})
+                    .banner__bottom
+                        .banner__bottom-block
+                            each text in options.advantages
+                                .banner__bottom-item #{text}
+
+    else
+        .banner(style="background-image: url("+options.background+")")
+            .banner__content
+                .banner__container
+                    .banner__head
+                        .banner__title #{options.title}
+                        .banner__subtitle #{options.subtitle}
+                        .banner__icon
+                            i.zmdi(class=options.icon)
+                    .banner__button
+                        //- a.banner__link(href=options.link) #{options.button}
+                        .banner__link
+                            +button({text: options.button})
