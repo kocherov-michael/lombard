@@ -1,7 +1,7 @@
 import './map.scss'
 
 const mapElement = document.querySelector("#map")
-console.log(mapElement)
+// console.log(mapElement)
 if (mapElement) {
 
     

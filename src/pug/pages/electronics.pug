@@ -1,0 +1,11 @@
+extends ../layout/page.pug
+
+block variables
+    - var title = 'Электроника';
+    //- - var calculatorClass = 'calculator--jewelry';
+
+block content
+    include ../../blocks/header/header.pug
+    include ../../blocks/menu/menu.pug
+    include ../includes/electronics-content.pug
+    include ../../blocks/footer/footer.pug
