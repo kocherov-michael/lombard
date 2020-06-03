@@ -17,7 +17,7 @@ $accent-color            : #fc7654;
 $text-color              : #444;  
 $box-shadow-30           : rgba(0,0,0,0.3);
           
-$secondary-color         : #1d85b6; 
+// $secondary-color         : #1d85b6; 
 $primary-background-color: #E8E8EE ;     
 // $background-dark-color   : #6C6F90 ;  
 $background-dark-color   : $primary-color;
@@ -34,7 +34,8 @@ $warning-color           : #ffc920;
 $default-color           : #fff;
 $danger-color            : #ff663d;
 $neutral-background-color: #F6F6F7;
-$neutral-primary-color   : #A7A7A7;
+// $neutral-primary-color   : #A7A7A7;
+$neutral-primary-color   : rgb(224, 224, 224);
 $neutral-secondary-color : #636363;
 $dark-color              : #232323;
 

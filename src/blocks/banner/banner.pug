@@ -35,4 +35,7 @@ mixin banner(options)
                     .banner__button
                         //- a.banner__link(href=options.link) #{options.button}
                         .banner__link
-                            +button({text: options.button})
+                            +button({
+                                text: options.button,
+                                href: options.link
+                                })

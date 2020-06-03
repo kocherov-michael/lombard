@@ -18,6 +18,7 @@ main.page
     .page__container.container
         .page__title Текущие расценки на скупку золота<br> Цены указаны за грамм
         .page__row
+            include ../../blocks/table-prices/table-prices.pug
             
     .page__wide-block
         .wide-block(style="background-image: url(src/assets/img/bg/bg2.jpg)")
@@ -66,7 +67,7 @@ main.page
             title: "У нас уже 12 ломбардов",
             subtitle: "Выберите ближайший к вам",
             button: "Выбрать ломбард",
-            link: "#",
+            link: "contacts.html",
             icon: "zmdi-pin"
             })
     .page__container.container
