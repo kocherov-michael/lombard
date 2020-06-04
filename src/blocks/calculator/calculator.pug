@@ -1,5 +1,10 @@
-- var calculatorClass = 'calculator--else'
-- var calculatorClass = 'calculator--jewelry'
+//- - var calculatorClass = 'calculator--else'
+//- - var calculatorClass = 'calculator--jewelry'
+//- - var calculatorClass = 'calculator--buyup'
+
+- var buttonText = "Оставить заявку"
+- if(calculatorClass=='calculator--buyup'){buttonText="Рассчитать"}
+
 
 .calculator(class=calculatorClass)
     .calculator__title Калькулятор займа
@@ -9,8 +14,9 @@
                 .calculator__input-item.calculator__input-item--weight
                     +labelInput({ 
                         title: "Вес изделия:",
-                        innerText: "гр."
-                        }) 
+                        innerText: "гр.",
+                        type: "number"
+                        })(data-input-weight)
                 .calculator__input-item.calculator__input-item--sample
                     +labelInput({ 
                         title: "Проба:",
@@ -35,24 +41,25 @@
                             "80 дней",
                             "90 дней",
                         ] 
-                        }) 
+                        })
             .calculator__inputs
                 .calculator__input-item
                     +labelInput({ 
                         title: "Сумма к получению:",
-                        innerText: "руб."
-                        }) 
-                .calculator__input-item
+                        innerText: "руб.",
+                        readonly: "readonly"
+                        })(data-input-summ) 
+                .calculator__input-item.calculator__input-item--daily
                     +labelInput({
                         title: "Ежедневный платёж:",
                         innerText: "руб."
                         }) 
-                .calculator__input-item
+                .calculator__input-item.calculator__input-item--total
                     +labelInput({ 
                         title: "Платёж за весь срок займа:",
                         innerText: "руб."
                         }) 
         .calculator__bottom
             .calculator__button
-                +button({text: "Оставить заявку"})
+                +button({text: buttonText})
 

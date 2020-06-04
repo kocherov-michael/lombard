@@ -4,7 +4,7 @@ mixin tableItem(options)
     //- price1: "1288",
     //- price2: "1326",
     //- price3: "1401",
-    .table-item
+    .table-item(data-table-item)
         .table-item__head
             .table-item__name #{options.name}
             .table-item__sample 
@@ -12,8 +12,8 @@ mixin tableItem(options)
                 .table-item__sample-text проба
         .table-item__price
             .table-item__price-value
-                .table-item__price-wrapper.table-item__price-wrapper--1(data-table-price-wrapper)
-                    .table-item__price-item.table-item__price-item--1 #{options.price1}
-                    .table-item__price-item.table-item__price-item--2 #{options.price2}
-                    .table-item__price-item.table-item__price-item--3 #{options.price3}
+                .table-item__price-wrapper.table-item__price-wrapper--1(data-table-item-price-wrapper data-price-1=options.price1 data-price-2=options.price2 data-price-3=options.price3)
+                    .table-item__price-item.table-item__price-item--1(data-table-item-1) #{options.price1}
+                    .table-item__price-item.table-item__price-item--2(data-table-item-2) #{options.price2}
+                    .table-item__price-item.table-item__price-item--3(data-table-item-3) #{options.price3}
             .table-item__price-text рублей

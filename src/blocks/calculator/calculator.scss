@@ -18,6 +18,17 @@
             display: none;
         }
     }
+    &--buyup {
+        .calculator__input-item--period,
+        .calculator__input-item--sample,
+        .calculator__input-item--money,
+        .calculator__input-item--daily,
+        .calculator__input-item--total,
+        .calculator__bottom,
+        .calculator__title {
+            display: none;
+        }
+    }
 }
 
 .calculator__title {
@@ -30,6 +41,10 @@
 
 .calculator__top {
     display: flex;
+    flex-direction: column;
+    @media(min-width:567px) {
+        flex-direction: row;
+    }
 }
 .calculator__inputs {
     flex: 1;

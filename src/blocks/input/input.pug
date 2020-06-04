@@ -6,12 +6,17 @@ mixin input(options)
     //-         .input-custom
 mixin labelInput(options)
     label.label&attributes(attributes) #{options.title}
+        - if (!options.type) {options.type="text"}
+        
         if options.select
-            select.input(type='text' placeholder=options.placeholder)
+            select.input(type='text' placeholder=options.placeholder )
                 each option in options.select
                     option.option #{option}
         else
-            input.input(type='text' placeholder=options.placeholder)
+            if options.readonly
+                input.input(type=options.type placeholder=options.placeholder readonly)
+            else
+                input.input(type=options.type placeholder=options.placeholder)
         if options.innerText
             .label__inner-text #{options.innerText}
         else if options.select
