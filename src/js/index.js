@@ -3,6 +3,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 require("@fancyapps/fancybox");
 require('@fancyapps/fancybox/dist/jquery.fancybox.css');
+// import '../assets/fonts/ubuntu/UbuntuRegular.css'
 
 import './../blocks/header/header.js'
 import './../blocks/logo/logo.js'
