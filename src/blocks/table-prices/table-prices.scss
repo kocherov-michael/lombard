@@ -1,6 +1,12 @@
 @import "../../assets/scss/utils/vars.scss";
 
+.table-prices__head {
+    padding-left: 10px;
+    padding-right: 10px;
+    // overflow: hidden;
+}
 .table-prices-head {
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -42,12 +48,12 @@
         left: 0;
         right: 0;
 
-        border-left: calc((50vw - 15px) / 3) solid rgba(0, 0, 0, 0);
-        border-right: calc((50vw - 15px) / 3) solid rgba(0, 0, 0, 0);
+        border-left: calc((50vw - 25px) / 3) solid rgba(0, 0, 0, 0);
+        border-right: calc((50vw - 25px) / 3) solid rgba(0, 0, 0, 0);
         border-top: 20px solid $neutral-primary-color;
         z-index: 10;
         height: 0;
-        transition: all .4s ease;
+        transition: border-color .4s ease;
         
         @media(min-width: 768px) {
             top: 0;
@@ -80,8 +86,8 @@
     display: flex;
     justify-content: center;
     &:after {
-        border-left: calc((50vw - 15px) ) solid rgba(0, 0, 0, 0);
-        border-right: calc((50vw - 15px) ) solid rgba(0, 0, 0, 0);
+        border-left: calc((50vw - 25px) ) solid rgba(0, 0, 0, 0);
+        border-right: calc((50vw - 25px) ) solid rgba(0, 0, 0, 0);
         border-top: 20px solid $secondary-color;
         
         @media(min-width: 768px) {
@@ -102,7 +108,7 @@
     padding-top: 20px;
     color: $neutral-secondary-color;
     font-size: 2em;
-    transition: all .4s ease;
+    transition: background-color .4s ease;
     display: flex;
     justify-content: center;
 
