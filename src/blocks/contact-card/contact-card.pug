@@ -1,7 +1,11 @@
 mixin contactCard(options)
     .contact-card(data-contact-card data-coordinatesX=options.x data-coordinatesY=options.y data-coordinates-title=options.title )
-        a.contact-card__title(href="lombard-address.html")
-            .contact-card__link #{options.title}
+        if options.href
+            a.contact-card__title(href=options.href)
+                .contact-card__link #{options.title}
+        else
+            .contact-card__title
+                .contact-card__link #{options.title}
         .contact-card__main
             .contact-card__coordinates
                 .contact-card__item

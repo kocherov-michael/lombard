@@ -1,0 +1,46 @@
+main.page
+    .page__container.container
+        .page__title Салон-Ломбард на Владимирском проспекте, 15
+        .page__row
+            include ../../blocks/map/map.pug
+        .page__row
+            .contacts-list
+                .contacts-list__item
+                    +contactCard({
+                        title: 'Салон-Ломбард на Владимирском проспекте, 15',
+                        address: 'Санкт-Петербург, Владимирский пр. д.15, корп.а, ТЦ "Платформа" Цокольный этаж',
+                        time: 'с 08:00 до 20:00',
+                        phone: '8 (812) 123-31-89',
+                        email: 'vladimirsky@mail.ru',
+                        metro: 'метро Владимирская',
+                        x: '59.927423',
+                        y: '30.348297'
+                        })
+        .page__row
+            .page__text
+                p Сеть ломбардов — это ломбарды нового поколения. Мы не занимаемся скупкой краденых вещей и предлагаем низкие процентные ставки. Одной из основных своих задач мы видим развитие цивилизованного ломбардного бизнеса в нашей стране.
+            .page__images
+                .page__images-item
+                    +imgCard({
+                        background: "assets/img/img/card-link-1.jpg",
+                    })
+                .page__images-item
+                    +imgCard({
+                        background: "assets/img/img/card-link-2.jpg",
+                    })
+                .page__images-item
+                    +imgCard({
+                        background: "assets/img/img/card-link-3.jpg",
+                    })
+                .page__images-item
+                    +imgCard({
+                        background: "assets/img/img/card-link-4.jpg",
+                    })
+                .page__images-item
+                    +imgCard({
+                        background: "assets/img/img/card-link-1.jpg",
+                    })
+                .page__images-item
+                    +imgCard({
+                        background: "assets/img/img/card-link-2.jpg",
+                    })
