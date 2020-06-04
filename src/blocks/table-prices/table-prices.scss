@@ -128,12 +128,16 @@
 }
 
 .table-prices-head__desc {
-    flex: 1;
+    // flex: 1 0 100%;
     overflow: hidden;
     background-color: $neutral-background-color;
+    display: flex;
+    align-items: center;
 }
 .table-prices-head__desc-wrapper {
+    width: 100%;
     display: flex;
+    align-items: center;
     transition: transform .4s ease;
     &--1 {
         transform: translateX(0);
@@ -159,6 +163,8 @@
 }
 .table-prices-head__desc-item {
     flex: 1 0 100%;
+    width: 100%;
+    // flex: 1;
     padding: 40px 20px 20px;
     opacity: 0;
     transition: opacity .4s ease;
@@ -177,6 +183,10 @@
 }
 
 .table-prices-grid__item {
-    flex: 1 0 33.3333%;
     padding: 10px;
+    width: 100%;
+    @media(min-width: 768px) {
+        flex: 1 0 33.3333%;
+        width: 33.3333%;
+    }
 }

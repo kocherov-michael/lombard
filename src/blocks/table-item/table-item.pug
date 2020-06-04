@@ -5,10 +5,11 @@ mixin tableItem(options)
     //- price2: "1326",
     //- price3: "1401",
     .table-item
-        .table-item__name #{options.name}
-        .table-item__sample 
-            .table-item__sample-value #{options.sample}
-            .table-item__sample-text проба
+        .table-item__head
+            .table-item__name #{options.name}
+            .table-item__sample 
+                .table-item__sample-value #{options.sample}
+                .table-item__sample-text проба
         .table-item__price
             .table-item__price-value
                 .table-item__price-wrapper
