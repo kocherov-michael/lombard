@@ -37,6 +37,7 @@ main.page
                         price1: "1288",
                         price2: "1326",
                         price3: "1401",
+                        className: "not-interaction"
                     },
                     {
                         name: "Золото",
@@ -44,6 +45,7 @@ main.page
                         price1: "2100",
                         price2: "2068",
                         price3: "2185",
+                        className: "not-interaction"
                     },
                     {
                         name: "Золото",
@@ -51,10 +53,11 @@ main.page
                         price1: "2576",
                         price2: "2651",
                         price3: "2801",
+                        className: "not-interaction"
                     }
             ]})
     .page__container.container
-        .page__title Мы принимаем в наши ломбарды
+        .page__title.pt-50 Мы принимаем в наши ломбарды
         .page__row
             .block-double-carousel.block-double-carousel--items-8
                 .owl-carousel.owl-theme(data-owl-carousel="8")
@@ -106,7 +109,7 @@ main.page
                         desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
                         background: "assets/img/img/card-link-8.jpg"
                         })
-    .page__wide-block
+    .page__wide-block.pt-50
         +banner({
             background: "assets/img/bg/bg1.jpg",
             title: "У нас уже 12 ломбардов",
@@ -117,9 +120,9 @@ main.page
             })
     .page__container.container
         .page__title Приглашаем в наши ломбарды
-        .page__row
+        .page__row.pb-10
             p.page__desc.w-50 Сеть ломбардов приглашает Вас в свои салоны, расположенные в удобных точках Санкт-Петербурга. Сдать дорого в сети ломбардов СПб. Выгодные условия, быстрое и качественное обслуживание!
-        .page__row
+        .page__row.pt-0
             .info-cards
                 .info-cards__item
                     +info-main-block({

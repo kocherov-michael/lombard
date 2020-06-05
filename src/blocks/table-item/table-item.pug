@@ -1,10 +1,11 @@
 mixin tableItem(options)
+    - if(!options.className){options.className=""}
     //- name: "Золото",
     //- sample: "375",
     //- price1: "1288",
     //- price2: "1326",
     //- price3: "1401",
-    .table-item(data-table-item)
+    .table-item(class=options.className data-table-item)
         .table-item__head
             .table-item__name #{options.name}
             .table-item__sample 

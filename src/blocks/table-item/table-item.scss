@@ -21,6 +21,20 @@
             background-color: $default-color;
         }
     }
+    &.not-interaction{
+        cursor: auto;
+        &:hover {
+            box-shadow: none;
+        }
+    
+        &.table-item--active {
+            background-color: $default-color;
+    
+            .table-item__price {
+                background-color: $primary-color;
+            }
+        }
+    }
 
     @media(min-width:768px)  {
         // flex-direction: column;
