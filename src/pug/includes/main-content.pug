@@ -53,71 +53,59 @@ main.page
                         price3: "2801",
                     }
             ]})
-            //- include ../../blocks/table-prices/table-prices.pug
     .page__container.container
-        //- .page__row
-        //-     p.page__desc.fw-bold Сеть ломбардов Санкт-Петербургa. Сдать в ломбард золото, серебро, часы, бриллианты, ювелирные украшения, монеты, автомобили. Онлайн оценка бесплатно.
-        //- .page__row
-        //-     .page__split
-        //-         .page__split-left
-        //-             include ../../blocks/table-gold/table-gold.pug
-        //-         .page__split-rigth
-        //-             include ../../blocks/slider/slider.pug
         .page__title Мы принимаем в наши ломбарды
         .page__row
-            +blocks-row([
-                {
-                    link: '#', 
-                    title: "Золото, бриллианты, серебро",
-                    desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
-                    background: "assets/img/img/card-link-1.jpg"
-                },
-                {
-                    link: '#', 
-                    title: "Автоломбард",
-                    desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
-                    background: "assets/img/img/card-link-2.jpg"
-                },
-                {
-                    link: '#', 
-                    title: "Часы",
-                    desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
-                    background: "assets/img/img/card-link-3.jpg"
-                },
-                {
-                    link: '#', 
-                    title: "Шубы",
-                    desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
-                    background: "assets/img/img/card-link-4.jpg"
-                }
-            ])
-        .page__row
-            +blocks-row([
-                {
-                    link: '#', 
-                    title: "Монеты",
-                    desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
-                    background: "assets/img/img/card-link-5.jpg"
-                },
-                {
-                    link: '#', 
-                    title: "Электроника",
-                    desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
-                    background: "assets/img/img/card-link-6.jpg"
-                },
-                {
-                    link: '#', 
-                    title: "Недвижимость",
-                    desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
-                    background: "assets/img/img/card-link-7.jpg"
-                },
-                {
-                    link: '#', 
-                    title: "Прочее",
-                    desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
-                    background: "assets/img/img/card-link-8.jpg"
-                }
-            ])
+            .block-double-carousel.block-double-carousel--items-8
+                .owl-carousel.owl-theme(data-owl-carousel="8")
+                    +card-link({
+                        link: '#', 
+                        title: "Золото, бриллианты, серебро",
+                        desc: "Ставка от 2 % в месяц.",
+                        background: "assets/img/img/card-link-1.jpg"
+                        })
+                    +card-link({
+                        link: '#', 
+                        title: "Автоломбард",
+                        desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц. Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                        background: "assets/img/img/card-link-2.jpg"
+                        })
+                    +card-link({
+                        link: '#', 
+                        title: "Часы",
+                        desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                        background: "assets/img/img/card-link-3.jpg"
+                        })
+                    +card-link({
+                        link: '#', 
+                        title: "Шубы",
+                        desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                        background: "assets/img/img/card-link-4.jpg"
+                        })
+                    +card-link({
+                        link: '#', 
+                        title: "Монеты",
+                        desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                        background: "assets/img/img/card-link-5.jpg"
+                        })
+                    +card-link({
+                        link: '#', 
+                        title: "Электроника",
+                        desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                        background: "assets/img/img/card-link-6.jpg"
+                        })
+                    +card-link({
+                        link: '#', 
+                        title: "Недвижимость",
+                        desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                        background: "assets/img/img/card-link-7.jpg"
+                        })
+                    +card-link({
+                        link: '#', 
+                        title: "Прочее",
+                        desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                        background: "assets/img/img/card-link-8.jpg"
+                        })
     .page__wide-block
         +banner({
             background: "assets/img/bg/bg1.jpg",
