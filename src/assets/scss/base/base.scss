@@ -50,7 +50,14 @@ main {
     }
 }
 
-.page__wide-block.page__wide-block--buyup-calculator {
-    min-height: auto;
-    padding-top: 0;
+
+.page__wide-block {
+    &.page__wide-block--buyup-calculator {
+        min-height: auto;
+        padding-top: 0;
+    }
+
+    &.page__wide-block--top-sticky {
+        padding-top: 0;
+    }
 }
