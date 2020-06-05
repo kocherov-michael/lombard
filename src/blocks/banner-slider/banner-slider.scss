@@ -1,0 +1,65 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.banner-slider {
+    // border: 1px solid red;
+    background-color: $secondary-color;
+    // height: 400px;
+    .owl-carousel {
+        // height: 100%;
+        .owl-item {
+            // height: 400px;
+            // position: relative;
+            // width: 100%;
+            img {
+                // object-fit: cover;
+                // height: 100%;
+                // width: 100%;
+            }
+        }
+        .owl-nav {
+            .owl-prev {
+                // border: 1px solid green;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                background: linear-gradient(to right, rgba(10, 22, 78,1) 0%, rgba(10, 22, 78, 0) 100%);
+            }
+            .owl-next {
+                // border: 1px solid green;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                background: linear-gradient(to left, rgba(10, 22, 78,1) 0%, rgba(10, 22, 78, 0) 100%);
+            }
+            span {
+                background-color: transparent;
+                transform: translateY(0);
+            }
+        }
+    }
+    // .owl-stage-outer {
+    //     // height: 100%;
+    // }
+    // .owl-stage {
+    //     // height: 100%;
+    // }
+}
+
+.banner-slider__container {
+    // border: 1px solid green;
+    max-height: 100%;
+}
+
+.banner-slider__item {
+    height: 200px;
+    position: relative;
+    width: 100%;
+    @media (min-width: 768px) {
+        height: 300px;
+    }
+}
+.banner-slider__item-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
