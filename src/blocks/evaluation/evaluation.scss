@@ -40,6 +40,10 @@
 
 .eval-form__top {
     display: flex;
+    flex-direction: column;
+    @media(min-width: 768px) {
+        flex-direction: row;
+    }
 }
 
 .eval-form__input-wrapper {
