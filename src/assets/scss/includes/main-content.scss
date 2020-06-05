@@ -64,14 +64,20 @@
     padding-bottom: 30px;
 }
 .w-50 {
-    max-width: 50%;
+    
+    @media(min-width: 992px) {
+        max-width: 50%;
+    }
 }
 .info-cards__item {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .info-cards__item:nth-child(even) {
-    .info-main-block__text {
-        order: 1;
+    
+    @media(min-width: 768px) {
+        .info-main-block__text {
+            order: -1;
+        }
     }
 }

@@ -92,35 +92,43 @@ function chancgeTableCategories() {
             })
         })
 
-        // инпут веса 
-        const inputWeightElement = document.querySelector('[data-input-weight]').querySelector('input')
-        console.log(inputWeightElement.value)
-        // инпут суммы
-        const inputSummElement = document.querySelector('[data-input-summ]').querySelector('input')
-    
-        inputWeightElement.addEventListener('input', () => {
-            
-            const weight = inputWeightElement.value
-            console.log(weight)
-            const price = table.getAttribute('data-current-price')
-            console.log(price)
-            showPrice(price)
-        })
+        const inputWeightWrapper = document.querySelector('[data-input-weight]')
+        
+        if (inputWeightWrapper) {
+            // инпут веса 
+            const inputWeightElement = inputWeightWrapper.querySelector('input')
+            // console.log(inputWeightElement.value)
+            // инпут суммы
+            // const inputSummElement = document.querySelector('[data-input-summ]').querySelector('input')
+        
+            inputWeightElement.addEventListener('input', () => {
+                
+                const weight = inputWeightElement.value
+                // console.log(weight)
+                const price = table.getAttribute('data-current-price')
+                // console.log(price)
+                showPrice(price)
+            })
+        }
     })
 }
 
 function showPrice(price) {
-    // инпут веса 
-    const inputWeightElement = document.querySelector('[data-input-weight]').querySelector('input')
-    // инпут суммы
-    const inputSummElement = document.querySelector('[data-input-summ]').querySelector('input')
-
-    if (price && +price > 0) {
-        
-        inputSummElement.value = inputWeightElement.value * +price
-    }
-    else {
-        inputSummElement.value = "Выберите пробу"
+    const inputWeightWrapper = document.querySelector('[data-input-weight]')
+    
+    if (inputWeightWrapper) {
+        // инпут веса 
+        const inputWeightElement = inputWeightWrapper.querySelector('input')
+        // инпут суммы
+        const inputSummElement = document.querySelector('[data-input-summ]').querySelector('input')
+    
+        if (price && +price > 0) {
+            
+            inputSummElement.value = inputWeightElement.value * +price
+        }
+        else {
+            inputSummElement.value = "Выберите пробу"
+        }
     }
 
 }
