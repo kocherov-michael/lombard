@@ -59,5 +59,6 @@ main {
 
     &.page__wide-block--top-sticky {
         padding-top: 0;
+        min-height: auto;
     }
 }

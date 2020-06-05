@@ -1,16 +1,68 @@
 main.page
     .page__wide-block.page__wide-block--top-sticky
-        +bannerSlider({})
+        +bannerSlider({array: [
+            {
+                pretitle:"",
+                title: "Сеть ломбардов Санкт-Петербургa",
+                subtitle: "",
+                img: "assets/img/img/slider-3.jpg"    
+            },
+            {
+                pretitle:"Сдать в ломбард золото, серебро,",
+                title: "часы, бриллианты, ювелирные украшения,",
+                subtitle: "монеты, автомобили.",
+                img: "assets/img/img/slider-2.jpg"    
+            },
+            {
+                pretitle:"",
+                title: "Онлайн оценка бесплатно.",
+                subtitle: "",
+                img: "assets/img/img/slider-4.jpg"    
+            },
+            {
+                pretitle:"Принимаем в качестве залога изделия из",
+                title: "платины и палладия",
+                subtitle: "",
+                img: "assets/img/img/slider-1.jpg"    
+            },
+        ]})
     //-     .owl-carousel.owl-theme#carouselImg(data-img-slider)
     .page__container.container
+        .page__title Цена на золото
         .page__row
-            p.page__desc.fw-bold Сеть ломбардов Санкт-Петербургa. Сдать в ломбард золото, серебро, часы, бриллианты, ювелирные украшения, монеты, автомобили. Онлайн оценка бесплатно.
-        .page__row
-            .page__split
-                .page__split-left
-                    include ../../blocks/table-gold/table-gold.pug
-                .page__split-rigth
-                    include ../../blocks/slider/slider.pug
+            +tablePrices({array: [
+                    {
+                        name: "Золото",
+                        sample: "375",
+                        price1: "1288",
+                        price2: "1326",
+                        price3: "1401",
+                    },
+                    {
+                        name: "Золото",
+                        sample: "585",
+                        price1: "2100",
+                        price2: "2068",
+                        price3: "2185",
+                    },
+                    {
+                        name: "Золото",
+                        sample: "750",
+                        price1: "2576",
+                        price2: "2651",
+                        price3: "2801",
+                    }
+            ]})
+            //- include ../../blocks/table-prices/table-prices.pug
+    .page__container.container
+        //- .page__row
+        //-     p.page__desc.fw-bold Сеть ломбардов Санкт-Петербургa. Сдать в ломбард золото, серебро, часы, бриллианты, ювелирные украшения, монеты, автомобили. Онлайн оценка бесплатно.
+        //- .page__row
+        //-     .page__split
+        //-         .page__split-left
+        //-             include ../../blocks/table-gold/table-gold.pug
+        //-         .page__split-rigth
+        //-             include ../../blocks/slider/slider.pug
         .page__title Мы принимаем в наши ломбарды
         .page__row
             +blocks-row([

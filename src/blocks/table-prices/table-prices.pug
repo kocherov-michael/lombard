@@ -1,87 +1,90 @@
-.table-prices(data-table-price-wrapper="1" data-current-price="0")
-    .table-prices__head
-        .table-prices-head
-            .table-prices-head__blocks
-                .table-prices-head__blocks-item-main Выбрать категорию
-                .table-prices-head__blocks-item.table-prices-head__blocks-item--active(data-table-price="1") 1
-                .table-prices-head__blocks-item(data-table-price="2") 2
-                .table-prices-head__blocks-item(data-table-price="3") 3
-            .table-prices-head__desc
-                .table-prices-head__desc-wrapper.table-prices-head__desc-wrapper--1(data-table-desc-wrapper)
-                    .table-prices-head__desc-item.table-prices-head__desc-item--1 1-я категория: изделия с дефектами, неполные изделия, части изделий, изделия с нечитаемыми клеймами, импортными клеймами, зубное золото.
-                    .table-prices-head__desc-item.table-prices-head__desc-item--2 2-я категория: изделия не требующие ремонта, годные к продаже. Без дефектов, с низкой степенью износа, без износа. Отечественного производства (особенно СССР), имеющие полное клеймение. Импортного производства, имеющие клеймо российской пробирной инспекции. Классический дизайн.
-                    .table-prices-head__desc-item.table-prices-head__desc-item--3 3-я категория: изделия с бриллиантами, не требующие ремонта, годные к продаже. Без дефектов, с низкой степенью износа, без износа. Классический дизайн. Отечественного производства, имеющие полное клеймение. Импортного производства, имеющие клеймо российской пробирной инспекции.
-    .table-prices__main
-        .table-prices-grid
-            .table-prices-grid__item
-                +tableItem({
-                    name: "Золото",
-                    sample: "375",
-                    price1: "1288",
-                    price2: "1326",
-                    price3: "1401",
-                })
-            .table-prices-grid__item
-                +tableItem({
-                    name: "Золото",
-                    sample: "500",
-                    price1: "1718",
-                    price2: "1768",
-                    price3: "1868",
-                })
-            .table-prices-grid__item
-                +tableItem({
-                    name: "Золото",
-                    sample: "585",
-                    price1: "2100",
-                    price2: "2068",
-                    price3: "2185",
-                })
-            .table-prices-grid__item
-                +tableItem({
-                    name: "Золото",
-                    sample: "750",
-                    price1: "2576",
-                    price2: "2651",
-                    price3: "2801",
-                })
-            .table-prices-grid__item
-                +tableItem({
-                    name: "Золото",
-                    sample: "833",
-                    price1: "2861",
-                    price2: "2945",
-                    price3: "3111",
-                })
-            .table-prices-grid__item
-                +tableItem({
-                    name: "Золото",
-                    sample: "900",
-                    price1: "3092",
-                    price2: "3182",
-                    price3: "3362",
-                })
-            .table-prices-grid__item
-                +tableItem({
-                    name: "Золото",
-                    sample: "916",
-                    price1: "3147",
-                    price2: "3238",
-                    price3: "3421",
-                })
-            .table-prices-grid__item
-                +tableItem({
-                    name: "Золото",
-                    sample: "958",
-                    price1: "3291",
-                    price2: "3387",
-                    price3: "3578",
-                })
-            .table-prices-grid__item
-                +tableItem({
-                    name: "Золото",
-                    sample: "999",
-                    price1: "3432",
-                    price2: "3532",
-                    price3: "3732",
-                })
+mixin tablePrices(options)
+    .table-prices(data-table-price-wrapper="1" data-current-price="0")
+        .table-prices__head
+            .table-prices-head
+                .table-prices-head__blocks
+                    .table-prices-head__blocks-item-main Выбрать категорию
+                    .table-prices-head__blocks-item.table-prices-head__blocks-item--active(data-table-price="1") 1
+                    .table-prices-head__blocks-item(data-table-price="2") 2
+                    .table-prices-head__blocks-item(data-table-price="3") 3
+                .table-prices-head__desc
+                    .table-prices-head__desc-wrapper.table-prices-head__desc-wrapper--1(data-table-desc-wrapper)
+                        .table-prices-head__desc-item.table-prices-head__desc-item--1 1-я категория: изделия с дефектами, неполные изделия, части изделий, изделия с нечитаемыми клеймами, импортными клеймами, зубное золото.
+                        .table-prices-head__desc-item.table-prices-head__desc-item--2 2-я категория: изделия не требующие ремонта, годные к продаже. Без дефектов, с низкой степенью износа, без износа. Отечественного производства (особенно СССР), имеющие полное клеймение. Импортного производства, имеющие клеймо российской пробирной инспекции. Классический дизайн.
+                        .table-prices-head__desc-item.table-prices-head__desc-item--3 3-я категория: изделия с бриллиантами, не требующие ремонта, годные к продаже. Без дефектов, с низкой степенью износа, без износа. Классический дизайн. Отечественного производства, имеющие полное клеймение. Импортного производства, имеющие клеймо российской пробирной инспекции.
+        .table-prices__main
+            .table-prices-grid
+                each item in options.array
+                    .table-prices-grid__item
+                        +tableItem({
+                            name: item.name,
+                            sample: item.sample,
+                            price1: item.price1,
+                            price2: item.price2,
+                            price3: item.price3,
+                        })
+
+                //- .table-prices-grid__item
+                //-     +tableItem({
+                //-         name: "Золото",
+                //-         sample: "500",
+                //-         price1: "1718",
+                //-         price2: "1768",
+                //-         price3: "1868",
+                //-     })
+                //- .table-prices-grid__item
+                //-     +tableItem({
+                //-         name: "Золото",
+                //-         sample: "585",
+                //-         price1: "2100",
+                //-         price2: "2068",
+                //-         price3: "2185",
+                //-     })
+                //- .table-prices-grid__item
+                //-     +tableItem({
+                //-         name: "Золото",
+                //-         sample: "750",
+                //-         price1: "2576",
+                //-         price2: "2651",
+                //-         price3: "2801",
+                //-     })
+                //- .table-prices-grid__item
+                //-     +tableItem({
+                //-         name: "Золото",
+                //-         sample: "833",
+                //-         price1: "2861",
+                //-         price2: "2945",
+                //-         price3: "3111",
+                //-     })
+                //- .table-prices-grid__item
+                //-     +tableItem({
+                //-         name: "Золото",
+                //-         sample: "900",
+                //-         price1: "3092",
+                //-         price2: "3182",
+                //-         price3: "3362",
+                //-     })
+                //- .table-prices-grid__item
+                //-     +tableItem({
+                //-         name: "Золото",
+                //-         sample: "916",
+                //-         price1: "3147",
+                //-         price2: "3238",
+                //-         price3: "3421",
+                //-     })
+                //- .table-prices-grid__item
+                //-     +tableItem({
+                //-         name: "Золото",
+                //-         sample: "958",
+                //-         price1: "3291",
+                //-         price2: "3387",
+                //-         price3: "3578",
+                //-     })
+                //- .table-prices-grid__item
+                //-     +tableItem({
+                //-         name: "Золото",
+                //-         sample: "999",
+                //-         price1: "3432",
+                //-         price2: "3532",
+                //-         price3: "3732",
+                //-     })

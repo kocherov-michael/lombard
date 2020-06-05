@@ -1,12 +1,12 @@
 mixin bannerSlider(options)
     .banner-slider
-        .banner-slider__container.container
+        .banner-slider__container
             .owl-carousel.owl-theme(data-banner-slider)
-                .banner-slider__item
-                    img.banner-slider__item-img(src="assets/img/img/card-link-1.jpg")
-                .banner-slider__item
-                    img.banner-slider__item-img(src="assets/img/img/card-link-2.jpg")
-                .banner-slider__item
-                    img.banner-slider__item-img(src="assets/img/img/card-link-3.jpg")
-                .banner-slider__item
-                    img.banner-slider__item-img(src="assets/img/img/card-link-4.jpg")
+                each item in options.array
+                    .banner-slider__item
+                        .banner-slider__item-text
+                            .banner-slider-text
+                                .banner-slider-text__subtitle #{item.pretitle}
+                                .banner-slider-text__title #{item.title}
+                                .banner-slider-text__subtitle #{item.subtitle}
+                        img.banner-slider__item-img(src=item.img)
