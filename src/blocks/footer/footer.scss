@@ -105,6 +105,10 @@
     
     &-text {
         line-height: 1.5;
+        &--link {
+            border-bottom: 1px solid $default-color;
+            cursor: pointer;
+        }
     }
     a {
         text-decoration: none;

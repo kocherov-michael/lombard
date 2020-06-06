@@ -1,4 +1,5 @@
 header.header.container
+    include ../popup-card/popup-card.pug
     .header__logo 
         include ../logo/logo.pug
     .header__center
@@ -15,4 +16,4 @@ header.header.container
         .header__item
             .header__item-icon
                 i.zmdi.zmdi-phone-in-talk 
-            a.header__item-text(href="#") Заказать звонок
+            .header__item-text.header__item-text--link(data-show-popup) Заказать звонок

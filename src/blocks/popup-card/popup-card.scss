@@ -57,11 +57,13 @@
     
 .popup-card {
     border-radius: 10px;
-    min-height: 500px;
+    min-height: 400px;
     padding: 30px;
     background-color: $default-color;
+    // background-color: $secondary-color;
     position: relative;
     margin-bottom: 30px;
+    max-width: 400px;
 }
 
 
@@ -84,4 +86,23 @@
             transform: scale(1.5,1.5);
         }
     }
+}
+
+.popup-form__item {
+    padding: 15px 0;
+    color: $default-color;
+
+    input, .checkbox__new-input {
+        border: 1px solid $primary-color;
+    }
+    .checkbox__text {
+        color: $text-color;
+    }
+    .checkbox__check-item {
+        left: 6px;
+    }
+}
+.popup-form__button {
+    align-self: center;
+    // width: 200px;
 }

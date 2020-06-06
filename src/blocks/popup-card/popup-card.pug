@@ -2,4 +2,14 @@
     .popup-card.container(data-popup-card)
         .popup-card__close(data-popup-card-close)
             i.zmdi.zmdi-close
+        .popup-card__form
+            form.popup-form(action="")
+                .popup-form__item
+                    +input({placeholder: "Ваше имя"})
+                .popup-form__item
+                    +input({placeholder: "Номер телефона"})
+                .popup-form__item
+                    +checkbox("Отправляя заявку, я предоставляю согласие на обработку персональных данных.", "", "value")
+                .popup-form__button
+                    +button({text: "Отправить"})
         

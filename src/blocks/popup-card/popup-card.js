@@ -29,19 +29,21 @@ export default class PopUpCard {
     // прослушка элементов закрытия попап карточек
     listenClosePupUp() {
          // элемениы закрывания попап карточек
-        //  const closeElement = document.querySelector('[data-card-close]')
-         const closepopupElements = document.querySelectorAll('[data-popup-card-close]')
+         const wrapperElement = document.querySelector('[data-popup-card-wrapper]')
+         const closePopupElement = document.querySelector('[data-popup-card-close]')
 
-         // прослушка крестика закрытия попап карточки
-        //  closeElement.addEventListener('click', () => {
-        //     // this.hidePopUp('.big-card-wrapper')
-        // })
-        // прослушка крестика и кнопки закрытия карточки успеха добавления в корзину
-        closepopupElements.forEach((closeElement)=> {
-            closeElement.addEventListener('click', () => {
+         // прослушка обёртки попап карточки
+         wrapperElement.addEventListener('click', (event) => {
+             // если кликнули по затемнённой обёртке - закрыли попап
+             if (event.currentTarget === event.target) {
                 this.hidePopUp('.popup-card-wrapper')
-            })
+            }
         })
+        // прослушка крестика закрытия
+        closePopupElement.addEventListener('click', (event) => {
+            
+            this.hidePopUp('.popup-card-wrapper')
+       })
     }
 
     // показать всплывающее окно
@@ -61,7 +63,8 @@ export default class PopUpCard {
                 wrapperElement.classList.add(selector +'--transition-none')
                 wrapperElement.style = `top: ${pageYOffset}px;`
                 
-                if (document.documentElement.clientWidth > 1100) {
+                if (document.documentElement.clientWidth > 768) {
+                // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                     document.body.style = 'overflow: hidden; padding-right: 18px;'
                 }
                 wrapperElement.classList.add(selector +'--show')

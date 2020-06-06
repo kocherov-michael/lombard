@@ -5,7 +5,7 @@ mixin conditionsCard(options)
             .conditions-card__center #{options.desc}
             .conditions-card__button-wrapper
                 .conditions-card__button
-                    +button({text: "Оставить заявку"})
+                    +button({text: "Оставить заявку"})(data-show-popup)
         else if options.list
             .conditions-card__main.conditions-card__main--list-wrapper
                 .conditions-card__desc #{options.desc}
