@@ -3,7 +3,8 @@
 //- - var calculatorClass = 'calculator--buyup'
 
 - var buttonText = "Оставить заявку"
-- if(calculatorClass=='calculator--buyup'){buttonText="Рассчитать"}
+//- - if(calculatorClass=='calculator--buyup'){buttonText="Рассчитать"}
+- if(!calculatorClass){calculatorClass='calculator--else'}
 
 
 .calculator(class=calculatorClass)
@@ -61,5 +62,5 @@
                         }) 
         .calculator__bottom
             .calculator__button
-                +button({text: buttonText})
+                +button({text: buttonText})(data-show-popup)
 
