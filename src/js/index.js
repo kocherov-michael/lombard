@@ -37,7 +37,9 @@ import '../blocks/contact-card/contact-card.js'
 import './../blocks/conditions/conditions.js'
 import './../blocks/conditions-card/conditions-card.js'
 import './../blocks/footer/footer.js'
+import PopUpCard from './../blocks/popup-card/popup-card.js'
 
+const popup = new PopUpCard()
 
 
 $(document).ready(function() {

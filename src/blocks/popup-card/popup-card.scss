@@ -1,1 +1,87 @@
 @import "../../assets/scss/utils/vars.scss";
+
+// @import "../../assets/scss/utils/vars.scss";
+
+.popup-card-wrapper {
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;// именно так для прокрутки
+    background-color: $secondary-color-80;
+    z-index: 100;
+    padding: 30px 10px;
+    transform: translateY(-100%);
+    transition: opacity .4s ease;
+    // добавить, когда показывается карточка
+    overflow-y: hidden;
+    z-index: 200;
+    
+    .popup-card {
+        transition: all .4s ease;
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    
+    &--show {
+        position: absolute;
+        overflow-y: scroll;
+        min-height: 100vh;
+    }
+    &--show-card {
+
+        .popup-card {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    &--opacity-1 {
+        
+        opacity: 1;
+    }
+    &--translate {
+        transform: translateY(0);
+    }
+    &--transition-none {
+        transition: none;
+
+    }
+}
+// body {
+    //     // добавить, когда показывается карточка
+    //     // overflow: hidden;
+    // }
+    
+    
+    
+.popup-card {
+    border-radius: 10px;
+    min-height: 500px;
+    padding: 30px;
+    background-color: $default-color;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.popup-card__close {
+    position: absolute;
+    width: 50px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    
+    i {
+        transition: all .4s ease;
+    }
+    
+    &:hover {
+        i {
+            transform: scale(1.5,1.5);
+        }
+    }
+}
