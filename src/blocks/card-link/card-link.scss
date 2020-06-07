@@ -22,11 +22,20 @@
             opacity: 1;
         } 
     }
+    // a {
+    //     box-shadow: $box-shadow-30;
+    // }
 
     @media(min-width:768px) {
         // display: flex;
         // flex-direction: column;
         min-height: 250px;
+    }
+}
+a.card-link {
+    transition: all .4s ease;
+    &:hover {
+        box-shadow: $box-shadow-30;
     }
 }
 .card-link__title {

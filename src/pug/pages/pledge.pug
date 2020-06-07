@@ -6,63 +6,69 @@ block variables
 block content
     include ../../blocks/header/header.pug
     include ../../blocks/menu/menu.pug
-    //- include ../includes/main-content.pug
+    
     main.page
         .page__container.container
             .page__row
                 p.page__desc.fw-bold Мы принимаем в залог
             .page__row
-                +blocks-row([
-                    {
-                        link: '#', 
-                        title: "Золото, бриллианты, серебро",
-                        desc: "",
-                        background: "assets/img/img/card-link-1.jpg"
-                    },
-                    {
-                        link: '#', 
-                        title: "Автоломбард",
-                        desc: "",
-                        background: "assets/img/img/card-link-2.jpg"
-                    },
-                    {
-                        link: '#', 
-                        title: "Часы",
-                        desc: "",
-                        background: "assets/img/img/card-link-3.jpg"
-                    },
-                    {
-                        link: '#', 
-                        title: "Шубы",
-                        desc: "",
-                        background: "assets/img/img/card-link-4.jpg"
-                    }
-                ])
-            .page__row
-                +blocks-row([
-                    {
-                        link: '#', 
-                        title: "Монеты",
-                        desc: "",
-                        background: "assets/img/img/card-link-5.jpg"
-                    },
-                    {
-                        link: '#', 
-                        title: "Электроника",
-                        desc: "",
-                        background: "assets/img/img/card-link-6.jpg"
-                    },
-                    {
-                        link: '#', 
-                        title: "Недвижимость",
-                        desc: "",
-                        background: "assets/img/img/card-link-7.jpg"
-                    },
-                    {
-                        link: '#', 
-                        title: "Прочее",
-                        desc: "",
-                        background: "assets/img/img/card-link-8.jpg"
-                    }
-                ])
+                .block-flex-row
+                    .block-flex-row__item
+                        +card-link({
+                            link: '#', 
+                            title: "Золото, бриллианты, серебро",
+                            desc: "Ставка от 2 % в месяц.",
+                            background: "assets/img/img/card-link-1.jpg"
+                            })
+                    .block-flex-row__item
+                        +card-link({
+                            link: '#', 
+                            title: "Автоломбард",
+                            desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц. Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                            background: "assets/img/img/card-link-2.jpg"
+                            })
+                    .block-flex-row__item
+                        +card-link({
+                            link: '#', 
+                            title: "Часы",
+                            desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                            background: "assets/img/img/card-link-3.jpg"
+                            })
+                    //- .block-flex-row__item
+                    //-     +card-link({
+                    //-         link: '#', 
+                    //-         title: "Шубы",
+                    //-         desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                    //-         background: "assets/img/img/card-link-4.jpg"
+                    //-         })
+                .block-flex-row
+                    //- .block-flex-row__item
+                    //-     +card-link({
+                    //-         link: '#', 
+                    //-         title: "Монеты",
+                    //-         desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                    //-         background: "assets/img/img/card-link-5.jpg"
+                    //-         })
+                    .block-flex-row__item
+                        +card-link({
+                            link: '#', 
+                            title: "Электроника",
+                            desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                            background: "assets/img/img/card-link-6.jpg"
+                            })
+                    .block-flex-row__item
+                        +card-link({
+                            link: '#', 
+                            title: "Недвижимость",
+                            desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                            background: "assets/img/img/card-link-7.jpg"
+                            })
+                    .block-flex-row__item
+                        +card-link({
+                            link: '#', 
+                            title: "Прочее",
+                            desc: "Займ под залог ПТС. Авто остается у ВАС. Наличные деньги за 30 минут. Ставка от 2 % в месяц.",
+                            background: "assets/img/img/card-link-8.jpg"
+                            })
+                
     include ../../blocks/footer/footer.pug

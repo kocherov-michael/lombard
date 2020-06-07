@@ -36,27 +36,30 @@ main.page
         .page__title Мы принимаем в ломбард
         .page__row
             .block-flex-row
-                +card-link({
-                    title: "Мобильные телефоны",
-                    subtitle: "",
-                    background: "assets/img/img/card-link-3.jpg",
-                    class: "example",
-                    link: "catalog.html"
-                    })
-                +card-link({
-                    title: "Ноутбуки",
-                    subtitle: "",
-                    background: "assets/img/img/card-link-3.jpg",
-                    class: "example",
-                    link: "catalog.html"
-                    })
-                +card-link({
-                    title: "Планшеты",
-                    subtitle: "",
-                    background: "assets/img/img/card-link-3.jpg",
-                    class: "example",
-                    link: "catalog.html"
-                    })
+                .block-flex-row__item
+                    +card-link({
+                        title: "Мобильные телефоны",
+                        subtitle: "",
+                        background: "assets/img/img/card-link-3.jpg",
+                        class: "example",
+                        link: "catalog.html"
+                        })
+                .block-flex-row__item
+                    +card-link({
+                        title: "Ноутбуки",
+                        subtitle: "",
+                        background: "assets/img/img/card-link-3.jpg",
+                        class: "example",
+                        link: "catalog.html"
+                        })
+                .block-flex-row__item
+                    +card-link({
+                        title: "Планшеты",
+                        subtitle: "",
+                        background: "assets/img/img/card-link-3.jpg",
+                        class: "example",
+                        link: "catalog.html"
+                        })
     .page__wide-block
         +banner({
             background: "assets/img/bg/bg1.jpg",
