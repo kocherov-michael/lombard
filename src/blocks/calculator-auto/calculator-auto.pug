@@ -1,0 +1,122 @@
+//- - var calculator-autoClass = 'calculator-auto--else'
+//- - var calculator-autoClass = 'calculator-auto--jewelry'
+//- - var calculator-autoClass = 'calculator-auto--buyup'
+
+- var buttonText = "Оставить заявку"
+//- - if(calculator-autoClass=='calculator-auto--buyup'){buttonText="Рассчитать"}
+- if(!calculatorClass){calculatorClass='calculator-auto--else'}
+
+
+.calculator-auto(class=calculatorClass)
+    .calculator-auto__title Калькулятор займа
+    .calculator-auto__main
+        .calculator-auto__row
+            .calculator-auto__center Введите стоимость вашего автомобиля
+        .calculator-auto__row
+            .calculator-auto__center
+                +labelInput({ 
+                            title: " ",
+                            innerText: "",
+                            type: "number"
+                            })
+        .calculator-auto__row.pt-20
+            .calculator-auto__center Тип займа
+        .calculator-auto__row
+            .calculator-auto__split
+                .calculator-auto__left Под залог ПТС
+                .calculator-auto__right Автоломбард
+        .calculator-auto__row.pt-20
+            .calculator-auto__center Сумма займа
+        .calculator-auto__row
+            .calculator-auto__split
+                .calculator-auto__left 
+                    +labelInput({ 
+                            title: " ",
+                            innerText: "",
+                            readonly: "readonly",
+                            })
+                .calculator-auto__right 
+                    +labelInput({ 
+                            title: " ",
+                            innerText: "",
+                            readonly: "readonly",
+                            })
+        .calculator-auto__row.pt-20
+            .calculator-auto__center Процентная ставка
+        .calculator-auto__row
+            .calculator-auto__split
+                .calculator-auto__left от 2,5%
+                .calculator-auto__right 2 % 
+        .calculator-auto__row.pt-20
+            .calculator-auto__center Ежемесячный платёж
+        .calculator-auto__row
+            .calculator-auto__split
+                .calculator-auto__left 
+                    +labelInput({ 
+                            title: " ",
+                            innerText: "",
+                            readonly: "readonly",
+                            })
+                .calculator-auto__right 
+                    +labelInput({ 
+                            title: " ",
+                            innerText: "",
+                            readonly: "readonly",
+                            })
+
+
+
+        //- .calculator-auto__top
+        //-     .calculator-auto__inputs
+        //-         .calculator-auto__input-item.calculator-auto__input-item--weight
+        //-             +labelInput({ 
+        //-                 title: "Вес изделия:",
+        //-                 innerText: "гр.",
+        //-                 type: "number"
+        //-                 })(data-input-weight)
+        //-         .calculator-auto__input-item.calculator-auto__input-item--sample
+        //-             +labelInput({ 
+        //-                 title: "Проба:",
+        //-                 select: ["585", "750", "999"]
+        //-             }) 
+        //-         .calculator-auto__input-item.calculator-auto__input-item--money
+        //-             +labelInput({ 
+        //-                 title: "Сумма займа:",
+        //-                 innerText: "руб."
+        //-                 })
+        //-         .calculator-auto__input-item.calculator-auto__input-item--period
+        //-             +labelInput({ 
+        //-                 title: "Срок займа:",
+        //-                 select: [
+        //-                     "10 дней",
+        //-                     "20 дней",
+        //-                     "30 дней",
+        //-                     "40 дней",
+        //-                     "50 дней",
+        //-                     "60 дней",
+        //-                     "70 дней",
+        //-                     "80 дней",
+        //-                     "90 дней",
+        //-                 ] 
+        //-                 })
+        //-     .calculator-auto__inputs
+        //-         .calculator-auto__input-item
+        //-             +labelInput({ 
+        //-                 title: "Сумма к получению:",
+        //-                 innerText: "руб.",
+        //-                 readonly: "readonly"
+        //-                 })(data-input-summ) 
+        //-         .calculator-auto__input-item.calculator-auto__input-item--daily
+        //-             +labelInput({
+        //-                 title: "Ежедневный платёж:",
+        //-                 innerText: "руб."
+        //-                 }) 
+        //-         .calculator-auto__input-item.calculator-auto__input-item--total
+        //-             +labelInput({ 
+        //-                 title: "Платёж за весь срок займа:",
+        //-                 innerText: "руб."
+        //-                 }) 
+        .calculator-auto__bottom
+            .calculator-auto__button
+                +button({text: buttonText})(data-show-popup)
+

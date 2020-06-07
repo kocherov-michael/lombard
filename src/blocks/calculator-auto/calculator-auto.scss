@@ -1,0 +1,119 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.calculator-auto {
+    // background-color: $background-dark-color;
+    // background-color: $ira-bg-color-80;
+    color: $default-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &--jewelry {
+        .calculator-auto__input-item--money {
+            display: none;
+        }
+    }
+    &--else {
+        .calculator-auto__input-item--weight,
+        .calculator-auto__input-item--sample {
+            display: none;
+        }
+    }
+    &--buyup {
+        .calculator-auto__input-item--period,
+        .calculator-auto__input-item--sample,
+        .calculator-auto__input-item--money,
+        .calculator-auto__input-item--daily,
+        .calculator-auto__input-item--total,
+        .calculator-auto__title {
+            display: none;
+        }
+    }
+}
+
+.calculator-auto__title {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 2em;
+    color: $default-color;
+}
+
+.calculator-auto__top {
+    display: flex;
+    flex-direction: column;
+    @media(min-width:567px) {
+        flex-direction: row;
+    }
+}
+.calculator-auto__inputs {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-auto__input-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex: 1;
+
+    &--period {
+        flex: 3;
+    }
+
+    input, select {
+        height: 45px;
+    }
+}
+
+.calculator-auto__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+// .calculator-auto__button {
+//     // max-width: 200px;
+// }
+
+.calculator-auto__center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.calculator-auto__split {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculator-auto__row {
+    // padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.calculator-auto__left,
+.calculator-auto__right {
+    
+    // background-color: red;
+    flex: 1;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.calculator-auto__left {
+    padding-right: 10px;
+    @media(min-width: 768px) {
+        padding-right: 40px;
+        
+    }
+}
+.calculator-auto__right {
+    padding-left: 10px;
+    @media(min-width: 768px) {
+        padding-left: 40px;
+
+    }
+}

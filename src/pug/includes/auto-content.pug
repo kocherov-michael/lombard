@@ -8,7 +8,6 @@ main.page
             link: "#",
             icon: "",
             view: "subtop",
-            topLink: "contacts.html",
             advantages:[
                 "Ставка от 2% в месяц",
                 "До 80% от стоимости авто",
@@ -25,19 +24,19 @@ main.page
                         desc: "",
                         list: [
                             {
-                                icon: "n-1-square",
+                                icon: "check",
                                 text: "Автомобиль остается в вашем распоряжении",
                             },
                             {
-                                icon: "n-2-square",
+                                icon: "check",
                                 text: "Вы передаете нам только ПТС",
                             },
                             {
-                                icon: "n-3-square",
+                                icon: "check",
                                 text: "Ставка от 2,5 %",
                             },
                             {
-                                icon: "n-4-square",
+                                icon: "check",
                                 text: "Вы получите до 70% стоимости вашего автомобиля",
                             },
                         ]
@@ -58,29 +57,29 @@ main.page
                         desc: "",
                         list: [
                             {
-                                icon: "n-1-square",
+                                icon: "check",
                                 text: "На период займа Ваша машина остается на нашей автостоянке",
                             },
                             {
-                                icon: "n-2-square",
+                                icon: "check",
                                 text: "Автомобиль застрахован и хранится на охраняемой стоянке",
                             },
                             {
-                                icon: "n-3-square",
+                                icon: "check",
                                 text: "Ставка от 2% в месяц",
                             },
                             {
-                                icon: "n-4-square",
+                                icon: "check",
                                 text: "До 80 % стоимости Вашего автомобиля",
                             },
                         ]
                     })
     .page__wide-block
-        .wide-block(style="background-image: url(src/assets/img/bg/bg2.jpg)")
+        .wide-block(style="background-image: url(src/assets/img/img/card-link-2.jpg)")
             .wide-block__fade
                 .wide-block__wrapper.container
                     .wide-block__container
-                        include ../../blocks/calculator/calculator.pug
+                        include ../../blocks/calculator-auto/calculator-auto.pug
     .page__container.container
         .page__title Основные условия
         .page__row
@@ -144,7 +143,7 @@ main.page
                         })
         .page__title Контакты
         .page__row
-            //- include ../../blocks/map/map.pug
+            include ../../blocks/map/map.pug
         .page__row
             .contacts-list
                 .contacts-list__item

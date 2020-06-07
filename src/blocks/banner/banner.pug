@@ -4,11 +4,12 @@ mixin banner(options)
             .banner__content
                 .banner__container
                     .banner__head
-                        .banner__item
-                            a.banner__item-link(href=options.topLink)
-                                .banner__item-icon
-                                    i.zmdi.zmdi-pin 
-                                .banner__item-text 10 отделений
+                        if options.topLink
+                            .banner__item
+                                a.banner__item-link(href=options.topLink)
+                                    .banner__item-icon
+                                        i.zmdi.zmdi-pin 
+                                    .banner__item-text 10 отделений
                         .banner__title #{options.title}
                         .banner__subtitle #{options.subtitle}
                         if options.icon
