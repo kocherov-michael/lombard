@@ -92,6 +92,8 @@ a.card-link {
 
     .card-link__title {
         order: 1;
+        text-transform: none;
+        font-weight: 400;
     }
 
     .card-link__main {

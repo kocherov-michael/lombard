@@ -5,7 +5,13 @@ mixin conditionsCard(options)
             .conditions-card__center #{options.desc}
             .conditions-card__button-wrapper
                 .conditions-card__button
-                    +button({text: "Оставить заявку"})(data-show-popup)
+                    if options.link==="#"
+                        +button({text: "Оставить заявку"})(data-show-popup)
+                    else
+                        +button({
+                            text: "Быстрая оценка",
+                            href: options.link
+                            })
         else if options.list
             .conditions-card__main.conditions-card__main--list-wrapper
                 if options.desc

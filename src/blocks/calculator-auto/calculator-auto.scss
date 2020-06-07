@@ -7,27 +7,27 @@
     padding-top: 10px;
     padding-bottom: 10px;
 
-    &--jewelry {
-        .calculator-auto__input-item--money {
-            display: none;
-        }
-    }
-    &--else {
-        .calculator-auto__input-item--weight,
-        .calculator-auto__input-item--sample {
-            display: none;
-        }
-    }
-    &--buyup {
-        .calculator-auto__input-item--period,
-        .calculator-auto__input-item--sample,
-        .calculator-auto__input-item--money,
-        .calculator-auto__input-item--daily,
-        .calculator-auto__input-item--total,
-        .calculator-auto__title {
-            display: none;
-        }
-    }
+    // &--jewelry {
+    //     .calculator-auto__input-item--money {
+    //         display: none;
+    //     }
+    // }
+    // &--else {
+    //     .calculator-auto__input-item--weight,
+    //     .calculator-auto__input-item--sample {
+    //         display: none;
+    //     }
+    // }
+    // &--buyup {
+    //     .calculator-auto__input-item--period,
+    //     .calculator-auto__input-item--sample,
+    //     .calculator-auto__input-item--money,
+    //     .calculator-auto__input-item--daily,
+    //     .calculator-auto__input-item--total,
+    //     .calculator-auto__title {
+    //         display: none;
+    //     }
+    // }
 }
 
 .calculator-auto__title {
@@ -38,33 +38,33 @@
     color: $default-color;
 }
 
-.calculator-auto__top {
-    display: flex;
-    flex-direction: column;
-    @media(min-width:567px) {
-        flex-direction: row;
-    }
-}
-.calculator-auto__inputs {
-    flex: 1;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-}
+// .calculator-auto__top {
+//     display: flex;
+//     flex-direction: column;
+//     @media(min-width:567px) {
+//         flex-direction: row;
+//     }
+// }
+// .calculator-auto__inputs {
+//     flex: 1;
+//     padding: 0 20px;
+//     display: flex;
+//     flex-direction: column;
+// }
 
-.calculator-auto__input-item {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    flex: 1;
+// .calculator-auto__input-item {
+//     padding-top: 15px;
+//     padding-bottom: 15px;
+//     flex: 1;
 
-    &--period {
-        flex: 3;
-    }
+//     &--period {
+//         flex: 3;
+//     }
 
-    input, select {
-        height: 45px;
-    }
-}
+//     input, select {
+//         height: 45px;
+//     }
+// }
 
 .calculator-auto__bottom {
     display: flex;
