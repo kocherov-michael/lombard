@@ -8,7 +8,8 @@ mixin conditionsCard(options)
                     +button({text: "Оставить заявку"})(data-show-popup)
         else if options.list
             .conditions-card__main.conditions-card__main--list-wrapper
-                .conditions-card__desc #{options.desc}
+                if options.desc
+                    .conditions-card__desc #{options.desc}
                 .conditions-card__list
                     each elem in options.list
                         .conditions-card__list-item 

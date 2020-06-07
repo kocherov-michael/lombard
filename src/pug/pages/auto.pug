@@ -1,0 +1,12 @@
+extends ../layout/page.pug
+
+block variables
+    - var title = 'Автоломбард';
+    - var calculatorClass = 'calculator--auto';
+    //- - var src = "https://api-maps.yandex.ru/2.1/?apikey=3f3d492a-5215-40d7-be00-a8275e1e64e2&lang=ru_RU";
+
+block content
+    include ../../blocks/header/header.pug
+    include ../../blocks/menu/menu.pug
+    include ../includes/auto-content.pug
+    include ../../blocks/footer/footer.pug
