@@ -2,6 +2,11 @@
 
 .banner-slider {
     // background-color: $secondary-color;
+    .owl-nav  {
+        .owl-prev,.owl-next {
+            transform: translateY(-50%);
+        }
+    }
 }
 
 .banner-slider__container {
@@ -22,12 +27,16 @@
     width: 100%;
 }
 
-.owl-nav span {
-    transition: box-shadow .4s ease;
-    
-    &:hover {
-        box-shadow: $box-shadow-30;
+.owl-nav {
+
+    span {
+        transition: box-shadow .4s ease;
+        
+        &:hover {
+            box-shadow: $box-shadow-30;
+        }
     }
+    
 }
 
 .banner-slider-text {

@@ -24,28 +24,34 @@
         opacity: 0;
     }
     
-    &--show {
-        position: absolute;
-        overflow-y: scroll;
-        min-height: 100vh;
-    }
+    // 1 очередь
     &--show-card {
-
         .popup-card {
             transform: translateY(0);
             opacity: 1;
         }
     }
+    // 1 очередь
     &--opacity-1 {
-        
         opacity: 1;
     }
+    // 1 очередь
     &--translate {
         transform: translateY(0);
     }
+    // 2 очередь
+    // 4 очередь - удаление класса
     &--transition-none {
         transition: none;
 
+    }
+    // 3 очередь
+    &--show {
+        // position: absolute;
+        overflow-y: scroll;
+        min-height: 100vh;
+
+        position: fixed;
     }
 }
 // body {

@@ -10,6 +10,9 @@
             position: absolute;
             top: 50%;
             outline: none;
+            // transform: translateY(-50%);
+            transform: translateY(calc(-50%-25px));
+
             span {
                 height: 50px;
                 width: 50px;
@@ -21,16 +24,20 @@
                 font-size: 2em;
                 color: #fff;
                 line-height: .5;
-                transform: translateY(-50%);
-                
             }
         }
         .owl-prev {
-            left: 15px;
+            left: 2px;
+            @media(min-width: 768px) {
+                left: 15px;
+            }
         }
     
         .owl-next {
-            right: 15px;
+            right: 2px;
+            @media(min-width: 768px) {
+                right: 15px;
+            }
         }
     }
     .owl-dots {

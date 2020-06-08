@@ -4,62 +4,29 @@ showMenu()
 
 function showMenu() {
     const menuElement = document.querySelector('[data-header-menu')
+    // const menuPlugElement = document.querySelector('[data-menu-plug')
+
+
     menuElement.addEventListener('click', () => {
         menuElement.classList.toggle('menu--open')
-        console.log('toggle')
-    })
+        // console.log('toggle')
+      })
+      // const defaultTopX = menuElement.getBoundingClientRect().top;
+      // const menuHeight = menuElement.clientHeight
+      // window.addEventListener('scroll', () => {
+      //   const topX = menuElement.getBoundingClientRect().top;
+      //   console.log(topX)
+      //   console.log('высота', menuElement.clientHeight)
+      //   console.log('Текущая прокрутка сверху: ' + window.pageYOffset)
 
+      //   if (topX < 0 - menuHeight) {
+      //     menuElement.classList.add('menu--fixed')
+      //     // menuPlugElement.style = `height: ${menuHeight}px`
+      //   }
+      //   if (window.pageYOffset < defaultTopX - menuHeight ) {
+      //     menuElement.classList.remove('menu--fixed')
+      //     // menuPlugElement.style = ''
+      //   }
+      // })
 
 }
-
-function checkbox (selector) {
-    const checkboxList = document.querySelectorAll(selector)
-    for (let i = 0; i < checkboxList.length; i++) {
-  
-      const expandCheckboxElement = checkboxList[i]
-      const expandHeaderElement = expandCheckboxElement.querySelector(".expandable-checkbox__header")
-      const expandListElement = expandCheckboxElement.querySelector(".expandable-checkbox__list")
-      let listHeight = parseFloat(getComputedStyle(expandListElement, null).height.replace("px", ""))
-    
-      expandHeaderElement.addEventListener('click', function handler() {
-        if (!listHeight) {
-          expandCheckboxElement.classList.add("expandable-checkbox_active")
-          listHeight = parseFloat(getComputedStyle(expandListElement, null).height.replace("px", ""))
-          expandCheckboxElement.classList.remove("expandable-checkbox_active")
-        }
-        
-        if (expandCheckboxElement.classList.contains("expandable-checkbox_active")) {
-          expandListElement.style.height = `${listHeight}px`
-          
-          const showList = setInterval(() => {
-            let height = parseInt(expandListElement.style.height.replace("px", ""))
-  
-            height -= 10
-            expandListElement.style.height = `${height}px`
-  
-            if (height <= 0) {
-              expandCheckboxElement.classList.remove("expandable-checkbox_active")
-              clearInterval(showList)
-            }
-          }, 10)
-        } else {
-          expandListElement.style.height = "0px"
-  
-          const showList = setInterval(() => {
-            expandCheckboxElement.classList.add("expandable-checkbox_active")
-  
-            let height = parseInt(expandListElement.style.height.replace("px", ""))
-            
-            height += 10
-            expandListElement.style.height = `${height}px`
-  
-            if (height > listHeight || height > 300) {
-              clearInterval(showList)
-            }
-          }, 10)
-        }
-      })
-    }
-  }
-  
-//   export default checkbox

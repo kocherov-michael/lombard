@@ -57,8 +57,8 @@
             // flex-wrap: wrap;
         }
         .owl-prev,.owl-next {
+            // transform: translateY(-50%);
             span {
-                transform: translateY(-110%);
                 
             }
         }

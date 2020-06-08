@@ -61,7 +61,7 @@ export default class PopUpCard {
             // console.log(wrapperElement)
             setTimeout(() => {
                 wrapperElement.classList.add(selector +'--transition-none')
-                wrapperElement.style = `top: ${pageYOffset}px;`
+                // wrapperElement.style = `top: ${pageYOffset}px;`
                 
                 if (document.documentElement.clientWidth > 768) {
                 // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
