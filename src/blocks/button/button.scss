@@ -29,7 +29,7 @@
     text-decoration: none;
     
     &:hover {
-        box-shadow: 0 0 3px 0 #fc7654;
+        box-shadow: $box-accent-shadow;
         text-decoration: none;
         background: #fff;
         color: #fc7654;

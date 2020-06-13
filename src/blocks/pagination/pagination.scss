@@ -1,0 +1,80 @@
+@import "../../assets/scss/utils/vars.scss";
+
+.pagination {
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+        display: none;
+    }
+
+    .nav-links {
+        .page-numbers {
+            height: 35px;
+            width: 35px;
+            text-decoration: none;
+            color: $text-color;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            @media(min-width: 400px) {
+                margin: 5px;
+                height: 40px;
+                width: 40px;
+            }
+        }
+        a {
+            transition: all .4s ease;
+            &:hover {
+                color: $accent-color;
+            }
+        }
+
+        .current {
+            border: 1px solid $accent-color;
+            color: $accent-color;
+        }
+
+        .prev, .next {
+            text-indent: 100px;
+            overflow: hidden;
+            position: relative;
+            background-color: $primary-color;
+            transition: all .4s ease;
+            border: 1px solid $primary-color;
+
+            &:after {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                font-family: $iconicFont;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                text-indent: 0;
+                color: $default-color;
+                transition: all .4s ease;
+            }
+
+            &:hover {
+                background-color: $default-color;
+                &:after {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .prev {
+            &:after {
+                content: "\f2fa";
+            }
+        }
+        .next {
+            &:after {
+                content: "\f2fb";
+            }
+        }
+    }
+}

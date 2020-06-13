@@ -1,0 +1,22 @@
+//- <nav class="navigation pagination" role="navigation" aria-label="Записи">
+//-     <h2 class="screen-reader-text">Навигация по записям</h2>
+//-     <div class="nav-links">
+//-         <a class="prev page-numbers" href="http://wp-lombard/%d0%b1%d0%bb%d0%be%d0%b3/">Назад</a>
+//-         <a class="page-numbers" href="http://wp-lombard/%d0%b1%d0%bb%d0%be%d0%b3/">1</a>
+//-         <span aria-current="page" class="page-numbers current">2</span>
+//-         <span class="page-numbers dots">…</span>
+//-         <a class="page-numbers" href="http://wp-lombard/%d0%b1%d0%bb%d0%be%d0%b3/page/3/">3</a>
+//-         <a class="next page-numbers" href="http://wp-lombard/%d0%b1%d0%bb%d0%be%d0%b3/page/3/">Далее</a>
+//-     </div>
+//- </nav>
+
+nav.pagination.navigation
+    h2 Навигация по записям
+    .nav-links
+        a.prev.page-numbers(href="#") Назад
+        a.page-numbers(href="#") 1
+        span.page-numbers.current 2
+        a.page-numbers(href="#") 3
+        span.page-numbers.dots …
+        a.page-numbers(href="#") 10
+        a.next.page-numbers(href="#") Далее
