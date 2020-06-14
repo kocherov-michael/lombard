@@ -1,0 +1,14 @@
+extends ../layout/page.pug
+
+block variables
+    - var title = 'Статья';
+
+block content
+    include ../../blocks/header/header.pug
+    include ../../blocks/menu/menu.pug
+    main.page
+        .page__container.container
+            h1.page__title 404 ошибка
+            .page__row
+                .page__text.page__text--center Такая страница не существует.
+    include ../../blocks/footer/footer.pug

@@ -38,7 +38,7 @@ main {
         height: 100%;
         width: 100%;
         // background-color: $background-opacity-color;
-        background-color: $ira-bg-color-80;
+        background-color: $secondary-color-80;
     }
     &__wrapper {
         display: flex;
@@ -70,5 +70,9 @@ main {
 .pagination-wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
+    text-align: center;
+}
+
+.page__text--center {
     text-align: center;
 }
