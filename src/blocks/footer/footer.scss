@@ -57,6 +57,13 @@
     a {
         text-decoration: none;
         color: $default-color;
+        transition: all .4s ease;
+        display: inline-block;
+        padding-bottom: 1px;
+        border-bottom: 1px solid transparent;
+        &:hover, &:focus     {
+            border-bottom: 1px solid $default-color;
+        }
     }
 }
 .footer__left-links {
