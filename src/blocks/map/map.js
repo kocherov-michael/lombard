@@ -8,13 +8,21 @@ if (mapElement) {
 
     const contactCardElements = document.querySelectorAll('[data-contact-card]')
     contactCardElements.forEach(card => {
-        const x = card.getAttribute('data-coordinatesX')
-        const y = card.getAttribute('data-coordinatesY')
+        // получаем строку с координатами в виде "широта, долгота" 
+        // и разбиваем по запятой
+        const coords = card.getAttribute('data-coordinates').split(',')
+        // console.log(coords)
+        // const x = card.getAttribute('data-coordinatesX')
+        // const y = card.getAttribute('data-coordinatesY')
+        const x = coords[0].trim()
+        const y = coords[1].trim()
         const title = card.getAttribute('data-coordinates-title')
         // заполняем масив координат отделений
+        // contactsArray.push({ x, y, title })
         contactsArray.push({ x, y, title })
-
+        
     })
+    console.log(contactsArray)
 
 
     // Функция ymaps.ready() будет вызвана, когда
@@ -57,21 +65,21 @@ if (mapElement) {
         //         iconCaptionMaxWidth: '150'
         //     }));
 
-        const contactCardElements = document.querySelectorAll('[data-contact-card]')
-        contactCardElements.forEach(card => {
-            const x = card.getAttribute('data-coordinatesX')
-            const y = card.getAttribute('data-coordinatesY')
-            const title = card.getAttribute('data-coordinates-title')
+        // const contactCardElements = document.querySelectorAll('[data-contact-card]')
+        // contactCardElements.forEach(card => {
+        //     const x = card.getAttribute('data-coordinatesX')
+        //     const y = card.getAttribute('data-coordinatesY')
+        //     const title = card.getAttribute('data-coordinates-title')
 
-            myMap.geoObjects
-                .add(new ymaps.Placemark([x, y], {
-                    balloonContent: 'цвет <strong>голубой</strong>',
-                    iconCaption: title
-                }, {
-                    preset: 'islands#blueCircleDotIconWithCaption',
-                    iconCaptionMaxWidth: '250'
-                }))
-        })
+        //     myMap.geoObjects
+        //         .add(new ymaps.Placemark([x, y], {
+        //             balloonContent: 'цвет <strong>голубой</strong>',
+        //             iconCaption: title
+        //         }, {
+        //             preset: 'islands#blueCircleDotIconWithCaption',
+        //             iconCaptionMaxWidth: '250'
+        //         }))
+        // })
 
         if (contactsArray.length > 0) {
             // обходим массив координат, которые создали перед инициализацией

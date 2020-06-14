@@ -1,5 +1,5 @@
 mixin contactCard(options)
-    .contact-card(data-contact-card data-coordinatesX=options.x data-coordinatesY=options.y data-coordinates-title=options.title )
+    .contact-card(data-contact-card data-coordinatesX=options.x data-coordinatesY=options.y data-coordinates-title=options.title data-coordinates=options.coordinates)
         if options.href
             a.contact-card__title(href=options.href)
                 .contact-card__link #{options.title}
