@@ -3,11 +3,11 @@ import './menu.scss'
 showMenu()
 
 function showMenu() {
-    const menuElement = document.querySelector('[data-header-menu')
-    // const menuPlugElement = document.querySelector('[data-menu-plug')
+    const menuElement = document.querySelector('[data-header-menu]')
+    const menuIconElement = document.querySelector('[data-header-menu-icon]')
 
 
-    menuElement.addEventListener('click', () => {
+    menuIconElement.addEventListener('click', () => {
         menuElement.classList.toggle('menu--open')
         // console.log('toggle')
       })
