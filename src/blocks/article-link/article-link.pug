@@ -13,7 +13,8 @@ mixin article-link(options)
                 .article-link__top
                     img.article-link__img(src=options.img)
                 .article-link__title #{options.title}
-                .article-link__desc #{options.desc}
+                .article-link__desc 
+                    p #{options.desc}
                 .article-link__bottom
                     .article-link__button
                         +button({
@@ -25,7 +26,8 @@ mixin article-link(options)
         else
             .article-link
                 .article-link__title #{options.title}
-                .article-link__desc #{options.desc}
+                .article-link__desc 
+                    p #{options.desc}
                 .article-link__bottom
                     .article-link__button
                         +button({
