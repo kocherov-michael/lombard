@@ -11,6 +11,7 @@ main.page
         //-                     .calculator-aside__text ЦЕНА НА ЗОЛОТО 585<br> ДО 2 185 РУБЛЕЙ<br> ЗА 1 ГРАММ 
         //-         .page__split-rigth.flex-basis-60
         //-             include ../../blocks/calculator/calculator.pug
+    .page__container.container
         .page__title Цена на золото 585 до 2 185 рублей за 1 грамм
     .page__wide-block
         .wide-block(style="background-image: url(assets/img/bg/bg2.jpg)")
@@ -20,6 +21,7 @@ main.page
                         include ../../blocks/calculator/calculator.pug
     .page__container.container
         .page__title Мы принимаем в наши ломбарды
+    .page__container.container
         .page__row
             include ../../blocks/block-accept/block-accept.pug
     .page__wide-block
@@ -33,6 +35,7 @@ main.page
             })
     .page__container.container
         .page__title 3 шага к получению денег
+    .page__container.container
         .page__row
             .carousel-line-wrapper
                 .owl-carousel.owl-theme#carouselSteps(data-owl-carousel="3")
@@ -65,9 +68,12 @@ main.page
             })
     .page__container.container
         .page__title Что вы должны знать при получении займа
+    .page__container.container
         .page__row
             include ../../blocks/conditions/conditions.pug
+    .page__container.container
         .page__title Примеры выданных займов
+    .page__container.container
         .page__row
             .carousel-line-wrapper
                 .owl-carousel.owl-theme#carouselExamples(data-owl-carousel="3")
@@ -139,6 +145,7 @@ main.page
                         background: "assets/img/img/card-link-1.jpg",
                         class: "advantage"
                         })
+    .page__container.container
         .page__row
             +dropdownDesc([
                 {

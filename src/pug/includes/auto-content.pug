@@ -82,9 +82,12 @@ main.page
                         include ../../blocks/calculator-auto/calculator-auto.pug
     .page__container.container
         .page__title Основные условия
+    .page__container.container
         .page__row
             include ../../blocks/conditions/conditions.pug
+    .page__container.container
         .page__title Как быстро получить займ
+    .page__container.container
         .page__row
             .carousel-line-wrapper
                 .owl-carousel.owl-theme#carouselSteps(data-owl-carousel)
@@ -117,6 +120,7 @@ main.page
             })
     .page__container.container
         .page__title Примеры займов
+    .page__container.container
         .page__row
             .carousel-line-wrapper
                 .owl-carousel.owl-theme#carouselExamples(data-owl-carousel="3")
@@ -141,9 +145,12 @@ main.page
                         background: "assets/img/img/peugeot.jpg",
                         class: "example"
                         })
+    .page__container.container
         .page__title Контакты
+    .page__container.container
         .page__row
             include ../../blocks/map/map.pug
+    .page__container.container
         .page__row
             .contacts-list
                 .contacts-list__item
@@ -154,10 +161,11 @@ main.page
                         phone: '8 (812) 123-31-89',
                         email: 'vladimirsky@mail.ru',
                         metro: 'метро Владимирская',
-                        x: '59.927423',
-                        y: '30.348297'
+                        coordinates: '59.927423,30.348297',
                         })
+    .page__container.container
         .page__title О компании
+    .page__container.container
         .page__row
             .page__text
                 p Сеть ломбардов — это ломбарды нового поколения. Мы не занимаемся скупкой краденых вещей и предлагаем низкие процентные ставки. Одной из основных своих задач мы видим развитие цивилизованного ломбардного бизнеса в нашей стране.
@@ -165,6 +173,7 @@ main.page
                 p Мы стараемся быть ближе к нашим клиентам, поэтому салоны ломбардов работают сразу в большинстве районов Санкт-Петербурга. В ближайшее время планируется открытие еще нескольких дополнительных салонов.
                 p Обратившись в любой из наших ломбардов, вы можете рассчитывать на высокий уровень сервиса, внимательное отношение к вашей проблеме и, конечно же, на выгодные условия получения займа.
                 p Если в качестве залога вы хотите оставить эксклюзивную вещь (швейцарские часы, ювелирные украшения известных брендов и т.п.), посетите наш салон на Владимирском пр., д. 15. Здесь ваш залог будет оценен максимально точно, и вы сможете получить займ на особых условиях.
+    .page__container.container
         .page__row
             .page__images
                 .page__images-item
@@ -183,6 +192,7 @@ main.page
                     +imgCard({
                         background: "assets/img/img/sertifikat.jpg",
                     })
+    .page__container.container
         .page__row
             +dropdownDesc([
                 {

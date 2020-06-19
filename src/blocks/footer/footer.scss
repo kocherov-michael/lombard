@@ -68,6 +68,9 @@
 }
 .footer__left-links {
     flex: 0 1 60%;
+    @media(min-width: 768px) {
+        flex-basis: auto;
+    }
 }
 .footer__right-links {
     flex: 0 1 40%;
