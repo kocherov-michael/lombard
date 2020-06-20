@@ -27,18 +27,6 @@
     width: 100%;
 }
 
-.owl-nav {
-
-    span {
-        transition: box-shadow .4s ease;
-        
-        &:hover {
-            box-shadow: $box-shadow-30;
-        }
-    }
-    
-}
-
 .banner-slider-text {
     position: absolute;
     top: 50%;
