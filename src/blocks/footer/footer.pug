@@ -1,7 +1,7 @@
 footer.footer
     .footer__container.container
         .footer__top
-            .footer__store
+            .footer__store.br
                 .footer__logo
                     include ../logo/logo.pug
                 .footer__number 8-800-123-45-67
@@ -14,8 +14,8 @@ footer.footer
                         i.zmdi.zmdi-pin 
                     a.footer__item-text(href="contacts.html") Выбрать ломбард
                 
-            nav.footer__links
-                ul.footer__left-links
+            nav.footer__nav
+                ul.footer-nav
                     li.menu-item
                         a(href="about.html") О компании
                     li.menu-item
@@ -24,13 +24,13 @@ footer.footer
                         a(href="pledge.html") Мы принимаем в залог
                     li.menu-item
                         a(href="buyup.html") Скупка
-                ul.footer__right-links
                     li.menu-item
                         a(href="news.html") Новости
                     li.menu-item
                         a(href="discount.html") Акции
                     li.menu-item
                         a(href="onsale.html") Изделия в продаже
+                //- ul.footer__right-links
     .footer__bottom
         .container
             .footer__desc Универсальный ломбард №1, 2020 г. Все права защищены.
