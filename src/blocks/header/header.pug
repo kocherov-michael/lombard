@@ -1,19 +1,35 @@
-header.header.container
+header.header
     include ../popup-card/popup-card.pug
-    .header__logo 
-        include ../logo/logo.pug
-    .header__center
-        .header__item
-            .header__item-icon
-                i.zmdi.zmdi-time
-            .header__item-text РАБОТАЕМ: С 8-20 ЧАСОВ
-        .header__item
-            .header__item-icon
-                i.zmdi.zmdi-pin 
-            a.header__item-text(href="contacts.html") Выбрать ломбард
-    .header__phone 
-        .header__number 8-800-123-45-67
-        .header__item
-            .header__item-icon
-                i.zmdi.zmdi-phone-in-talk 
-            .header__item-text.header__item-text--link(data-show-popup) Заказать звонок
+    .header__container.container
+        //- .header__logo 
+        //-     include ../logo/logo.pug
+        //- .header__center
+        //-     .header__item
+        //-         .header__item-icon
+        //-             i.zmdi.zmdi-time
+        //-         .header__item-text РАБОТАЕМ: С 8-20 ЧАСОВ
+        //-     .header__item
+        //-         .header__item-icon
+        //-             i.zmdi.zmdi-pin 
+        //-         a.header__item-text(href="contacts.html") Выбрать ломбард
+        //- .header__phone 
+        //-     .header__number 8-800-123-45-67
+        //-     .header__item
+        //-         .header__item-icon
+        //-             i.zmdi.zmdi-phone-in-talk 
+        //-         .header__item-text.header__item-text--link(data-show-popup) Заказать звонок
+        .header__top
+            .header__logo
+                include ../logo/logo.pug
+            .header__phone
+                .header__number 8 (800) 234-45-67
+                .header__time Работаем с 8 до 20
+        .header__bottom
+            .header__item.header__item--left
+                .header__item-icon
+                    i.zmdi.zmdi-pin 
+                a.header__item-text(href="contacts.html") Выбрать ломбард
+            .header__item.header__item--right
+                .header__item-icon
+                    i.zmdi.zmdi-phone-in-talk 
+                .header__item-text.header__item-text--link(data-show-popup) Заказать звонок

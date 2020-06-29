@@ -1,21 +1,42 @@
 @import "../../assets/scss/utils/vars.scss";
 
 .header {
-    display: flex;
-    justify-content: space-between;
+    background-color: $background-secondary-color;
+}
+
+.header__container {
+    // display: flex;
+    // justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 15px;
-    align-items: center;
+    // align-items: center;
     width: 100%;
-    flex-direction: column;
+    
+    // flex-direction: column;
 
-    @media(min-width: 768px) {
-        flex-direction: row;
-    }
+    // @media(min-width: 768px) {
+    //     flex-direction: row;
+    // }
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // border: 1px solid red;
+    align-items: stretch;
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .header__logo {
-    padding: 10px 0;
+    // padding: 10px 0;
 
 
 }
@@ -25,40 +46,59 @@
 }
 
 .header__phone {
-    padding: 10px 0;
-
+    // padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // flex-shrink: 0;
+    flex: 0 0 220px;
+    // height: 100%;
+    // border: 1px solid yellow;
 }
 
 .header__item {
     min-width: 190px;
     position: relative;
     display: flex;
+    color: $default-color;
     
     padding-top: 5px;
     padding-bottom: 5px;
     
     &-icon {
         text-align: center;
-        flex: 0 0 40px;
-        width: 40px;
+        flex: 0 0 20px;
+        // width: 40px;
+        padding-right: 10px;
         display: block;
         font-family: $iconicFont;
         font-size: 1.5em;
+        color: $default-color;
         color: $accent-color;
         align-self: flex-start;
     }
     
     &-text {
         line-height: 1.5;
+        // color: $default-color;
         &--link {
-            border-bottom: 1px solid $secondary-color;
+            color: $default-color;
+            border-bottom: 1px solid $default-color;
             cursor: pointer;
         }
+    }
+
+    &--left {
+        margin-left: 90px;
+    }
+
+    &--right {
+        flex: 0 0 220px;
     }
     a {
         text-decoration: none;
         color: inherit;
-        border-bottom: 1px solid $secondary-color;
+        border-bottom: 1px solid $default-color;
     }
     @media (min-width: 768px) {
         align-items: center;
@@ -67,4 +107,10 @@
 
 .header__number {
     font-size: 24px;
+    color: $default-color;
+    font-weight: bold;
+}
+
+.header__time {
+    color: $default-color;
 }
