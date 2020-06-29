@@ -68,9 +68,9 @@
 }
 .footer__left-links {
     flex: 0 1 60%;
-    @media(min-width: 768px) {
-        flex-basis: auto;
-    }
+    // @media(min-width: 768px) {
+    //     flex-basis: auto;
+    // }
 }
 .footer__right-links {
     flex: 0 1 40%;
@@ -78,9 +78,9 @@
 
 .footer__logo {
     padding-bottom: 20px;
-    svg  path {
-        fill: $default-color;
-    }
+    // svg  path {
+        // fill: $default-color;
+    // }
 
     .logo__title {
         color: $default-color;

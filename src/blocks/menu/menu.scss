@@ -148,9 +148,9 @@
             .menu-item {
                 align-items: flex-start;
                 text-align: left;
-                &:hover, &:focus {
+                // &:hover, &:focus {
                     // background-color: transparent;
-                }
+                // }
             }
 
             @media(min-width: 768px) {

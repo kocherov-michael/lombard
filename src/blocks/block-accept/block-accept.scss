@@ -5,7 +5,7 @@
     // border: 1px solid yellow;
     flex-direction: column;
 
-    @media(min-width: 768px) {
+    @media(min-width: 992px) {
         flex-direction: row;
     }
 
@@ -22,7 +22,7 @@
     // padding-top: 10px;
     // padding-bottom: 10px;
     padding: 10px;
-    @media(min-width: 768px) {
+    @media(min-width: 992px) {
         order: -1;
     }
 }
@@ -47,7 +47,7 @@
     color: $default-color;
     padding: 20px;
 
-    @media(min-width: 768px) {
+    @media(min-width: 992px) {
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -55,7 +55,7 @@
 
 .block-accept__slider {
     flex: 1 1 70%;
-
+    max-width: 100%;
    
     // border: 1px solid blue;
 }

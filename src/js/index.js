@@ -80,6 +80,16 @@ $(document).ready(function() {
                 }
             });
 
+            const owlItemsList = elem.querySelectorAll('.owl-item')
+            owlItemsList.forEach((item, i, arr) => {
+                if (arr.length > 3) {
+
+                    const percent = (100 / arr.length) * 2
+                    // console.log(item.style.flexBasis)
+                    item.style.flexBasis = `${percent}%`
+                }
+            })
+
             
         })
 
