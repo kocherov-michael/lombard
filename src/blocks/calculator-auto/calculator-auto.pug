@@ -10,47 +10,69 @@
 .calculator-auto(class=calculatorClass)
     .calculator-auto__title Калькулятор займа
     .calculator-auto__main
-        .calculator-auto__row
-            .calculator-auto__center Введите стоимость вашего автомобиля
-        .calculator-auto__row
-            .calculator-auto__center
+        .calculator__input-item
                 +labelInput({ 
-                            title: " ",
+                            title: "Введите среднюю рыночную стоимость вашего автомобиля",
                             innerText: "",
                             type: "number"
                             })
-        .calculator-auto__row.pt-20
-            .calculator-auto__center Тип займа
-        .calculator-auto__row
-            .calculator-auto__split
-                .calculator-auto__left Под залог ПТС
-                .calculator-auto__right Автоломбард
-        .calculator-auto__row.pt-20
-            .calculator-auto__center Сумма займа
-        .calculator-auto__row
-            .calculator-auto__split
-                .calculator-auto__left 
-                    +labelInput({ 
-                            title: " ",
+        .calculator__input-item
+                +labelInput({ 
+                            title: "Сумма займа",
                             innerText: "",
                             readonly: "readonly",
                             })
-                .calculator-auto__right 
-                    +labelInput({ 
-                            title: " ",
+        .calculator__input-item
+                +labelInput({ 
+                            title: "Ежемесячный платёж",
                             innerText: "",
                             readonly: "readonly",
                             })
-        .calculator-auto__row.pt-20
-            .calculator-auto__center Процентная ставка
-        .calculator-auto__row
+        //- .calculator-auto__row
+            .calculator-auto__center Введите среднюю рыночную стоимость вашего автомобиля
+        //- .calculator-auto__row
+            
+            //- .calculator-auto__center
+            //-     +labelInput({ 
+            //-                 title: " ",
+            //-                 innerText: "",
+            //-                 type: "number"
+            //-                 })
+        //- .calculator-auto__row.pt-20
+        //-     .calculator-auto__center Тип займа
+        //- .calculator-auto__row
             .calculator-auto__split
+                //- .calculator-auto__left Под залог ПТС
+                //- .calculator-auto__right Автоломбард
+        //- .calculator-auto__row.pt-20
+        //-     .calculator-auto__center Сумма займа
+        //- .calculator-auto__row
+            
+            //- .calculator-auto__split
+            //-     .calculator-auto__left 
+            //-         +labelInput({ 
+            //-                 title: " ",
+            //-                 innerText: "",
+            //-                 readonly: "readonly",
+            //-                 })
+            //-     .calculator-auto__right 
+            //-         +labelInput({ 
+            //-                 title: " ",
+            //-                 innerText: "",
+            //-                 readonly: "readonly",
+            //-                 })
+        //- .calculator-auto__row.pt-20
+        //-     .calculator-auto__center Процентная ставка
+        //- .calculator-auto__row
+        //-     .calculator-auto__center 2 % 
+            //- .calculator-auto__split
                 .calculator-auto__left от 2,5%
                 .calculator-auto__right 2 % 
-        .calculator-auto__row.pt-20
-            .calculator-auto__center Ежемесячный платёж
-        .calculator-auto__row
-            .calculator-auto__split
+        //- .calculator-auto__row.pt-20
+        //-     .calculator-auto__center Ежемесячный платёж
+        //- .calculator-auto__row
+            
+            //- .calculator-auto__split
                 .calculator-auto__left 
                     +labelInput({ 
                             title: " ",

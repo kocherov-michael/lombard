@@ -1,6 +1,8 @@
 mixin conditionsCard(options)
     .conditions-card
-        .conditions-card__title #{options.title}
+        if options.title
+            //- если заголовка нет, то шапку не показываем
+            .conditions-card__title #{options.title}
         if options.link
             .conditions-card__center #{options.desc}
             .conditions-card__button-wrapper
