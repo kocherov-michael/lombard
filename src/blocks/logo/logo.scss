@@ -74,6 +74,20 @@
     
     font-size: 0.8em;
     letter-spacing: 0.16em;
+
+    span {
+        font-size: 0.6em;
+        letter-spacing: .1em;
+        // @media (min-width: 576px) {
+        //     font-size: 0.8em;
+        //     letter-spacing: .1em;
+        // }
+        
+        // @media (min-width: 992px) {
+        //     font-size: .8em;
+        //     letter-spacing: .1em;
+        // }
+    }
     
     @media (min-width: 576px) {
         font-size: 1.2em;
