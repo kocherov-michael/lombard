@@ -5,7 +5,11 @@
     // background-color: $ira-bg-color;
     background-color: $background-secondary-color;
     color: $default-color;
-    padding-top: 50px;
+
+    @media(min-width: 992px) {
+        padding-top: 50px;
+
+    }
 }
 
 .footer__top {
@@ -15,7 +19,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @media(min-width: 567px) {
+    @media(min-width: 768px) {
         flex-direction: row;
     }
 
@@ -24,6 +28,9 @@
 
 .footer__store {
     // flex: 0 1 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding-bottom: 20px;
     @media(min-width: 768px) {
         // flex: 0 1 50%;
@@ -54,53 +61,6 @@
     }
 }
 
-// .footer__links {
-//     // flex: 0 1 40%;
-//     display: flex;
-//     flex-direction: column;
-//     padding-left: 10px;
-
-//     @media(min-width: 567px) {
-//         padding-left: 0;
-//     }
-    
-//     @media(min-width: 768px) {
-//         flex-direction: row;
-//         // flex: 0 1 50%;
-//     }
-// }
-
-// .footer__left-links,
-// .footer__right-links {
-//     list-style-type: none;
-//     padding: 0;
-//     margin: 0;
-
-//     .menu-item {
-//         padding-bottom: 15px;
-//     }
-
-//     a {
-//         text-decoration: none;
-//         color: $default-color;
-//         transition: all .4s ease;
-//         display: inline-block;
-//         padding-bottom: 1px;
-//         border-bottom: 1px solid transparent;
-//         &:hover, &:focus     {
-//             border-bottom: 1px solid $default-color;
-//         }
-//     }
-// }
-// .footer__left-links {
-//     flex: 0 1 60%;
-//     // @media(min-width: 768px) {
-//     //     flex-basis: auto;
-//     // }
-// }
-// .footer__right-links {
-//     flex: 0 1 40%;
-// }
 
 .footer__logo {
     padding-bottom: 20px;
@@ -118,12 +78,15 @@
 
 
 .footer__item {
-    min-width: 190px;
+    // min-width: 190px;
     position: relative;
     display: flex;
-    
+    cursor: pointer;
     padding-top: 5px;
     padding-bottom: 5px;
+    transition: all .4s ease;
+    color: $default-color;
+    border-color: $default-color;
     
     &-icon {
         text-align: center;
@@ -134,25 +97,35 @@
         font-family: $iconicFont;
         font-size: 1.5em;
         // color: $accent-color;
-        color: $default-color;
+        // color: $default-color;
+        color: inherit;
         align-self: flex-start;
     }
     
     &-text {
         line-height: 1.5;
+        
         &--link {
-            border-bottom: 1px solid $default-color;
-            cursor: pointer;
+            // border-bottom: 1px solid $default-color;
+            border-bottom: 1px solid;
+            
         }
+
     }
     a {
         text-decoration: none;
         color: inherit;
-        border-bottom: 1px solid $default-color;
+        // border-bottom: 1px solid $default-color;
+        border-bottom: 1px solid;
     }
-    @media (min-width: 768px) {
-        align-items: center;
+
+    &:hover, &:active, &:focus {
+        color: $primary-color;
     }
+    // @media (min-width: 768px) {
+    //     align-items: center;
+    //     border-color: $accent-color;
+    // }
 }
 
 .footer__number {
@@ -164,4 +137,37 @@
     border-top: 1px solid $neutral-secondary-color;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.footer__bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+.footer-socials {
+    display: flex;
+    padding-bottom: 10px;
+    @media (min-width: 768px) {
+        padding-bottom: 0;
+    }
+}
+.footer-socials__icon {
+    padding: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all .4s ease;
+    color: $default-color;
+
+    i {
+        font-size: 1.4em;
+    }
+
+    &:hover, &:active, &:focus {
+        color: $primary-color;
+    }
 }

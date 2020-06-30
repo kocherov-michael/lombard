@@ -26,10 +26,25 @@
 }
 
 .logo__img-container {
-    width: 70px;
-    height: 70px;
-    flex: 0 0 70px;
+    // width: 70px;
+    // height: 70px;
+    // flex: 0 0 70px;
     // border: 1px solid red;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+
+    @media (min-width: 576px) {
+        width: 50px;
+        height: 50px;
+        flex-basis: 50px;
+    }
+    
+    @media (min-width: 992px) {
+        width: 70px;
+        height: 70px;
+        flex-basis: 70px;
+    }
 }
 
 .logo__img {
@@ -39,21 +54,37 @@
 }
 
 .logo__text {
-    padding-left: 20px;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-shadow: 0px 6px 7px #000;
     // height: 100%;
     // border: 1px solid red;
+
+    @media (min-width: 576px) {
+        padding-left: 20px;
+    }
 }
 
 .logo__title {
     color: $default-color;
     line-height: 1.2;
-    font-size: 1.7em;
     text-transform: uppercase;
-    letter-spacing: .2em;
+    
+    font-size: 0.8em;
+    letter-spacing: 0.16em;
+    
+    @media (min-width: 576px) {
+        font-size: 1.2em;
+        letter-spacing: .2em;
+    }
+    
+    @media (min-width: 992px) {
+        font-size: 1.7em;
+
+    }
+
 }
 
 // .logo__title-main {
@@ -66,8 +97,21 @@
     // line-height: 1.7;
     color: $primary-color;
     white-space: nowrap;
-    font-size: 1.4em;
-    letter-spacing: .15em;
+    
+    
     text-transform: uppercase;
+
+    font-size: .7em;
+    letter-spacing: 0.1em;
+
+    @media (min-width: 576px) {
+        font-size: 1em;
+        letter-spacing: .15em;
+    }
+    
+    @media (min-width: 992px) {
+        font-size: 1.4em;
+
+    }
 }
 
