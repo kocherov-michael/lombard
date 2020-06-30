@@ -166,8 +166,18 @@
     i {
         font-size: 1.4em;
     }
+    path {
+        fill: $default-color;
+        transition: all .4s ease;
+    }
+    
 
     &:hover, &:active, &:focus {
         color: $primary-color;
+
+        path {
+            fill: $primary-color;
+        }
     }
 }
+
